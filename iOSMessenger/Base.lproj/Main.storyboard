@@ -1,10 +1,184 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16C41b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16C41b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="DRP-HI-Dw4">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
-    <scenes/>
+    <scenes>
+        <!--View-->
+        <scene sceneID="Ge9-lw-7Gi">
+            <objects>
+                <viewController id="SjX-pa-9sl" customClass="LoginViewController" customModule="iOSMessenger" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ZxA-9J-U1S"/>
+                        <viewControllerLayoutGuide type="bottom" id="C7j-pd-otB"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="FXc-Xo-Wos">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="forestRoad" translatesAutoresizingMaskIntoConstraints="NO" id="1t1-Kx-qCI" customClass="BlurImageView" customModule="iOSMessenger" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="line" placeholder="Password" textAlignment="center" adjustsFontSizeToFit="NO" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="7EQ-EP-pza" customClass="CustomTextField" customModule="iOSMessenger" customModuleProvider="target">
+                                <rect key="frame" x="20" y="311.5" width="335" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="ayX-ka-rkc"/>
+                                </constraints>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="_placeholderLabel.textColor">
+                                        <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mTO-am-jHr">
+                                <rect key="frame" x="20" y="191.5" width="335" height="36"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="26"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pzf-Kt-dDa">
+                                <rect key="frame" x="20" y="375.5" width="335" height="44"/>
+                                <color key="backgroundColor" red="0.0" green="0.64915133248730972" blue="0.019771489671612064" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="3bw-hI-mCb"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="20"/>
+                                <state key="normal" title="Login">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="loginTap:" destination="SjX-pa-9sl" eventType="touchUpInside" id="7ni-HJ-WNr"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MfI-l8-E26">
+                                <rect key="frame" x="20" y="429.5" width="335" height="44"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dqk-hr-bfD">
+                                        <rect key="frame" x="5" y="5" width="156.5" height="34"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="17"/>
+                                        <state key="normal" title="Password">
+                                            <color key="titleColor" red="0.96468715790425064" green="0.98230321471281012" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sYC-xO-2xX">
+                                        <rect key="frame" x="173.5" y="5" width="156.5" height="34"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="17"/>
+                                        <state key="normal" title="Register">
+                                            <color key="titleColor" red="0.96468715790425064" green="0.98230321471281012" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                    </button>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LrV-Uc-t5f" customClass="LineView" customModule="iOSMessenger" customModuleProvider="target">
+                                        <rect key="frame" x="166.5" y="9.5" width="2" height="25"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="25" id="IXY-o9-tko"/>
+                                            <constraint firstAttribute="width" constant="2" id="ua8-Ht-jQa"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="sYC-xO-2xX" secondAttribute="trailing" constant="5" id="3wC-on-9nJ"/>
+                                    <constraint firstItem="LrV-Uc-t5f" firstAttribute="centerX" secondItem="MfI-l8-E26" secondAttribute="centerX" id="Clb-AT-SDG"/>
+                                    <constraint firstItem="sYC-xO-2xX" firstAttribute="top" secondItem="MfI-l8-E26" secondAttribute="top" constant="5" id="NZF-fj-jMx"/>
+                                    <constraint firstAttribute="bottom" secondItem="sYC-xO-2xX" secondAttribute="bottom" constant="5" id="bTK-tR-YRQ"/>
+                                    <constraint firstItem="Dqk-hr-bfD" firstAttribute="top" secondItem="MfI-l8-E26" secondAttribute="top" constant="5" id="czk-F7-YLQ"/>
+                                    <constraint firstAttribute="bottom" secondItem="Dqk-hr-bfD" secondAttribute="bottom" constant="5" id="lC9-da-bF8"/>
+                                    <constraint firstItem="sYC-xO-2xX" firstAttribute="leading" secondItem="LrV-Uc-t5f" secondAttribute="trailing" constant="5" id="nYT-Ki-tYc"/>
+                                    <constraint firstItem="LrV-Uc-t5f" firstAttribute="centerY" secondItem="MfI-l8-E26" secondAttribute="centerY" id="x9x-Bt-ELh"/>
+                                    <constraint firstItem="Dqk-hr-bfD" firstAttribute="leading" secondItem="MfI-l8-E26" secondAttribute="leading" constant="5" id="zCS-Rh-nuw"/>
+                                    <constraint firstItem="LrV-Uc-t5f" firstAttribute="leading" secondItem="Dqk-hr-bfD" secondAttribute="trailing" constant="5" id="zxL-ND-l4N"/>
+                                </constraints>
+                            </view>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Email Address" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SPT-8l-XGQ" customClass="CustomTextField" customModule="iOSMessenger" customModuleProvider="target">
+                                <rect key="frame" x="20" y="247.5" width="335" height="44"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="20"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="_placeholderLabel.textColor">
+                                        <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="MfI-l8-E26" secondAttribute="trailing" constant="20" id="18s-hQ-Ee9"/>
+                            <constraint firstAttribute="trailing" secondItem="1t1-Kx-qCI" secondAttribute="trailing" id="3Gd-cK-iUZ"/>
+                            <constraint firstItem="pzf-Kt-dDa" firstAttribute="top" secondItem="7EQ-EP-pza" secondAttribute="bottom" constant="20" id="7it-GI-iEv"/>
+                            <constraint firstItem="1t1-Kx-qCI" firstAttribute="top" secondItem="FXc-Xo-Wos" secondAttribute="top" id="9KC-Tq-tje"/>
+                            <constraint firstItem="MfI-l8-E26" firstAttribute="top" secondItem="pzf-Kt-dDa" secondAttribute="bottom" constant="10" id="AFV-Yl-HY0"/>
+                            <constraint firstAttribute="trailing" secondItem="7EQ-EP-pza" secondAttribute="trailing" constant="20" id="DaC-kX-Ozo"/>
+                            <constraint firstAttribute="trailing" secondItem="mTO-am-jHr" secondAttribute="trailing" constant="20" id="Dki-GS-DvC"/>
+                            <constraint firstItem="SPT-8l-XGQ" firstAttribute="top" secondItem="mTO-am-jHr" secondAttribute="bottom" constant="20" id="Fwb-IL-gyc"/>
+                            <constraint firstItem="SPT-8l-XGQ" firstAttribute="leading" secondItem="FXc-Xo-Wos" secondAttribute="leading" constant="20" id="Kgd-Aq-pBw"/>
+                            <constraint firstItem="7EQ-EP-pza" firstAttribute="top" secondItem="SPT-8l-XGQ" secondAttribute="bottom" constant="20" id="LVC-ZV-zAJ"/>
+                            <constraint firstItem="mTO-am-jHr" firstAttribute="leading" secondItem="FXc-Xo-Wos" secondAttribute="leading" constant="20" id="La0-Df-ccH"/>
+                            <constraint firstItem="MfI-l8-E26" firstAttribute="leading" secondItem="FXc-Xo-Wos" secondAttribute="leading" constant="20" id="MQf-Wg-Ckj"/>
+                            <constraint firstItem="7EQ-EP-pza" firstAttribute="centerX" secondItem="1t1-Kx-qCI" secondAttribute="centerX" id="NCM-HR-R0I"/>
+                            <constraint firstAttribute="bottom" secondItem="1t1-Kx-qCI" secondAttribute="bottom" id="Rsq-DL-QYv"/>
+                            <constraint firstItem="MfI-l8-E26" firstAttribute="height" secondItem="pzf-Kt-dDa" secondAttribute="height" id="XVO-r1-s6J"/>
+                            <constraint firstItem="pzf-Kt-dDa" firstAttribute="leading" secondItem="FXc-Xo-Wos" secondAttribute="leading" constant="20" id="XqE-Z8-kTV"/>
+                            <constraint firstItem="1t1-Kx-qCI" firstAttribute="leading" secondItem="FXc-Xo-Wos" secondAttribute="leading" id="aK1-0F-4uD"/>
+                            <constraint firstItem="7EQ-EP-pza" firstAttribute="centerY" secondItem="1t1-Kx-qCI" secondAttribute="centerY" id="eWo-39-yU3"/>
+                            <constraint firstAttribute="trailing" secondItem="SPT-8l-XGQ" secondAttribute="trailing" constant="20" id="pkm-g6-Bld"/>
+                            <constraint firstAttribute="trailing" secondItem="pzf-Kt-dDa" secondAttribute="trailing" constant="20" id="uss-9E-dm2"/>
+                            <constraint firstItem="SPT-8l-XGQ" firstAttribute="height" secondItem="7EQ-EP-pza" secondAttribute="height" id="x4C-TR-GkF"/>
+                            <constraint firstItem="7EQ-EP-pza" firstAttribute="leading" secondItem="FXc-Xo-Wos" secondAttribute="leading" constant="20" id="xyW-a0-pRn"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="SvI-Di-yft"/>
+                    <connections>
+                        <outlet property="emailTextField" destination="SPT-8l-XGQ" id="MdM-yR-k0p"/>
+                        <outlet property="passwordTextField" destination="7EQ-EP-pza" id="Rvq-lX-GHq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8Ta-3y-htR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <customObject id="vKK-ql-I15" customClass="LoginAssembler" customModule="iOSMessenger" customModuleProvider="target">
+                    <connections>
+                        <outlet property="view" destination="SjX-pa-9sl" id="8sG-Ij-hsx"/>
+                    </connections>
+                </customObject>
+            </objects>
+            <point key="canvasLocation" x="917.60000000000002" y="184.85757121439281"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="SiC-Wh-kRC">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="DRP-HI-Dw4" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="tdr-Ur-3we">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="SjX-pa-9sl" kind="relationship" relationship="rootViewController" id="vij-4m-rEj"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GAB-lI-DAc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="116" y="184.85757121439281"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="forestRoad" width="1680" height="1050"/>
+    </resources>
 </document>

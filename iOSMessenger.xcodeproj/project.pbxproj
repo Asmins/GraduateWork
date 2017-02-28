@@ -8,40 +8,54 @@
 
 /* Begin PBXBuildFile section */
 		1E0C6BB4757ADCD8635C6BE5 /* Pods_iOSMessenger.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27153FB879B6115B515203BE /* Pods_iOSMessenger.framework */; };
-		4AC5C6FBE15621FFB24B47BA /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8C38DD1FA6A3FE158F2A53D /* FirstViewController.swift */; };
-		5855E4347A3AD65397506A22 /* FirstRouterInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E4EEFDA8E2FC36A3B8A995A /* FirstRouterInterface.swift */; };
-		7C0F268222CD7CCAF2315B13 /* FirstInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25860D24ED369A776FCC11D5 /* FirstInteractor.swift */; };
+		40D1A350D78D997F5157CC86 /* LoginAssember.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E6873C707635B8DDB2963C0 /* LoginAssember.swift */; };
+		437736C338E75837D2928BB3 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C65B85CE63BA6073B7EAD012 /* LoginViewController.swift */; };
+		43D4CE04D9C47EF274C9FFA9 /* LoginRouterInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 415337B3B6E251BB09E52F95 /* LoginRouterInterface.swift */; };
+		4BF543C1DD7BA12D3B59ADFC /* LoginViewInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DFB98B242AA5047A16F631C /* LoginViewInterface.swift */; };
+		820E085F1E5D8B4300BA2D0D /* BlurImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 820E085E1E5D8B4300BA2D0D /* BlurImageView.swift */; };
+		820E08631E5D8BA900BA2D0D /* Aspects.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 820E08601E5D8BA900BA2D0D /* Aspects.framework */; };
+		820E08641E5D8BA900BA2D0D /* Chamomile.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 820E08611E5D8BA900BA2D0D /* Chamomile.framework */; };
+		820E08651E5D8BA900BA2D0D /* Perform.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 820E08621E5D8BA900BA2D0D /* Perform.framework */; };
 		82A0D3CF1E5D86C100DB4D6B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82A0D3CE1E5D86C100DB4D6B /* AppDelegate.swift */; };
 		82A0D3D41E5D86C100DB4D6B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 82A0D3D21E5D86C100DB4D6B /* Main.storyboard */; };
 		82A0D3D61E5D86C100DB4D6B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 82A0D3D51E5D86C100DB4D6B /* Assets.xcassets */; };
 		82A0D3D91E5D86C100DB4D6B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 82A0D3D71E5D86C100DB4D6B /* LaunchScreen.storyboard */; };
-		84309C6047C4F085D3FA352E /* FirstAssember.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68104249CC02841AF038FCBF /* FirstAssember.swift */; };
-		99C696F87E74685EAF7EE93F /* FirstPresenterInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F5ED78812AF09E3C75038CC /* FirstPresenterInterface.swift */; };
-		B33295F70A40DAF84B94D83D /* FirstViewInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0580E2AD0F50902C31CB7867 /* FirstViewInterface.swift */; };
-		C25A5428494744DE4F116272 /* FirstPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9C3639881B0BA433DBF6E59 /* FirstPresenter.swift */; };
-		C4A06C60A679618E92E0A506 /* FirstInteractorInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4494EE76909661EF28C7AD14 /* FirstInteractorInterface.swift */; };
-		FB7605FE812156765F22D622 /* FirstRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B58AB49A6B303D8317EAEEED /* FirstRouter.swift */; };
+		82CB227A1E6597660069BD41 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82CB22791E6597660069BD41 /* CustomTextField.swift */; };
+		82CB227C1E65AB460069BD41 /* LineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82CB227B1E65AB460069BD41 /* LineView.swift */; };
+		82CB227E1E65B1230069BD41 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 82CB227D1E65B1230069BD41 /* GoogleService-Info.plist */; };
+		A8BD35A2F4503FEB06AB0D79 /* LoginPresenterInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = A368F56F3CA5FB0904AAEEEA /* LoginPresenterInterface.swift */; };
+		BDCB614E4C6700161CA2433E /* LoginInteractorInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CC7235F78E45F3973E14E81 /* LoginInteractorInterface.swift */; };
+		D1A3D74A9242EEDC3A26E33E /* LoginInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ED03AB56D624EA38182FF1B /* LoginInteractor.swift */; };
+		D98A1F48E61CB15445793D79 /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4985BBC887BEDFAC8684A37D /* LoginPresenter.swift */; };
+		EFBEBDA6F5F150E1B818CAC6 /* LoginRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F89DBCA441F3D645C8F6209F /* LoginRouter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0005374BE73A3A8EC32B5AAD /* Pods-iOSMessenger.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSMessenger.release.xcconfig"; path = "Pods/Target Support Files/Pods-iOSMessenger/Pods-iOSMessenger.release.xcconfig"; sourceTree = "<group>"; };
-		0580E2AD0F50902C31CB7867 /* FirstViewInterface.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FirstViewInterface.swift; sourceTree = "<group>"; };
-		0E4EEFDA8E2FC36A3B8A995A /* FirstRouterInterface.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FirstRouterInterface.swift; sourceTree = "<group>"; };
-		0F5ED78812AF09E3C75038CC /* FirstPresenterInterface.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FirstPresenterInterface.swift; sourceTree = "<group>"; };
-		25860D24ED369A776FCC11D5 /* FirstInteractor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FirstInteractor.swift; sourceTree = "<group>"; };
 		27153FB879B6115B515203BE /* Pods_iOSMessenger.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOSMessenger.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		4494EE76909661EF28C7AD14 /* FirstInteractorInterface.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FirstInteractorInterface.swift; sourceTree = "<group>"; };
-		68104249CC02841AF038FCBF /* FirstAssember.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FirstAssember.swift; sourceTree = "<group>"; };
+		2CC7235F78E45F3973E14E81 /* LoginInteractorInterface.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LoginInteractorInterface.swift; sourceTree = "<group>"; };
+		2ED03AB56D624EA38182FF1B /* LoginInteractor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LoginInteractor.swift; sourceTree = "<group>"; };
+		415337B3B6E251BB09E52F95 /* LoginRouterInterface.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LoginRouterInterface.swift; sourceTree = "<group>"; };
+		4985BBC887BEDFAC8684A37D /* LoginPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
+		5DFB98B242AA5047A16F631C /* LoginViewInterface.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LoginViewInterface.swift; sourceTree = "<group>"; };
+		6E6873C707635B8DDB2963C0 /* LoginAssember.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LoginAssember.swift; sourceTree = "<group>"; };
 		75DC96DFB4F9B768419E60C2 /* Pods-iOSMessenger.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSMessenger.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iOSMessenger/Pods-iOSMessenger.debug.xcconfig"; sourceTree = "<group>"; };
+		820E085E1E5D8B4300BA2D0D /* BlurImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlurImageView.swift; sourceTree = "<group>"; };
+		820E08601E5D8BA900BA2D0D /* Aspects.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Aspects.framework; path = Carthage/Build/iOS/Aspects.framework; sourceTree = "<group>"; };
+		820E08611E5D8BA900BA2D0D /* Chamomile.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Chamomile.framework; path = Carthage/Build/iOS/Chamomile.framework; sourceTree = "<group>"; };
+		820E08621E5D8BA900BA2D0D /* Perform.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Perform.framework; path = Carthage/Build/iOS/Perform.framework; sourceTree = "<group>"; };
 		82A0D3CB1E5D86C100DB4D6B /* iOSMessenger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSMessenger.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		82A0D3CE1E5D86C100DB4D6B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = ../AppDelegate.swift; sourceTree = "<group>"; };
 		82A0D3D31E5D86C100DB4D6B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		82A0D3D51E5D86C100DB4D6B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../Assets.xcassets; sourceTree = "<group>"; };
 		82A0D3D81E5D86C100DB4D6B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		82A0D3DA1E5D86C100DB4D6B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = ../Info.plist; sourceTree = "<group>"; };
-		A9C3639881B0BA433DBF6E59 /* FirstPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FirstPresenter.swift; sourceTree = "<group>"; };
-		B58AB49A6B303D8317EAEEED /* FirstRouter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FirstRouter.swift; sourceTree = "<group>"; };
-		C8C38DD1FA6A3FE158F2A53D /* FirstViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
+		82CB22791E6597660069BD41 /* CustomTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
+		82CB227B1E65AB460069BD41 /* LineView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LineView.swift; sourceTree = "<group>"; };
+		82CB227D1E65B1230069BD41 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "iOSMessenger/GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
+		A368F56F3CA5FB0904AAEEEA /* LoginPresenterInterface.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LoginPresenterInterface.swift; sourceTree = "<group>"; };
+		C65B85CE63BA6073B7EAD012 /* LoginViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		F89DBCA441F3D645C8F6209F /* LoginRouter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LoginRouter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,51 +64,77 @@
 			buildActionMask = 2147483647;
 			files = (
 				1E0C6BB4757ADCD8635C6BE5 /* Pods_iOSMessenger.framework in Frameworks */,
+				820E08631E5D8BA900BA2D0D /* Aspects.framework in Frameworks */,
+				820E08641E5D8BA900BA2D0D /* Chamomile.framework in Frameworks */,
+				820E08651E5D8BA900BA2D0D /* Perform.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		18628AC3700723B42B5CF723 /* Presenter */ = {
+		0E18F4448D6E661CC979BC8C /* Assembler */ = {
 			isa = PBXGroup;
 			children = (
-				0F5ED78812AF09E3C75038CC /* FirstPresenterInterface.swift */,
-				A9C3639881B0BA433DBF6E59 /* FirstPresenter.swift */,
+				6E6873C707635B8DDB2963C0 /* LoginAssember.swift */,
 			);
-			name = Presenter;
+			path = Assembler;
+			sourceTree = "<group>";
+		};
+		2E95F177FA400D3FF88AB172 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				A368F56F3CA5FB0904AAEEEA /* LoginPresenterInterface.swift */,
+				4985BBC887BEDFAC8684A37D /* LoginPresenter.swift */,
+			);
 			path = Presenter;
 			sourceTree = "<group>";
 		};
-		3ECA5EABC7332F2637995674 /* Interactor */ = {
+		2F017F805F0809C822E1DC31 /* Login */ = {
 			isa = PBXGroup;
 			children = (
-				4494EE76909661EF28C7AD14 /* FirstInteractorInterface.swift */,
-				25860D24ED369A776FCC11D5 /* FirstInteractor.swift */,
+				0E18F4448D6E661CC979BC8C /* Assembler */,
+				589ACEE76D368D7A66C6C921 /* View */,
+				4FB2D349BBDFF98F93396120 /* Interactor */,
+				2E95F177FA400D3FF88AB172 /* Presenter */,
+				CF51A4A57A1FE95EA2CFEBE2 /* Router */,
 			);
-			name = Interactor;
+			path = Login;
+			sourceTree = "<group>";
+		};
+		4FB2D349BBDFF98F93396120 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				2CC7235F78E45F3973E14E81 /* LoginInteractorInterface.swift */,
+				2ED03AB56D624EA38182FF1B /* LoginInteractor.swift */,
+			);
 			path = Interactor;
 			sourceTree = "<group>";
 		};
-		7D97038B71151346B89F3FD8 /* First */ = {
+		589ACEE76D368D7A66C6C921 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				FA5F64672AEC9F70272ECE08 /* Assembler */,
-				F6645CE9923783F8CD79B2E9 /* View */,
-				3ECA5EABC7332F2637995674 /* Interactor */,
-				18628AC3700723B42B5CF723 /* Presenter */,
-				ECAFA87BCC90E235416C36DB /* Router */,
+				5DFB98B242AA5047A16F631C /* LoginViewInterface.swift */,
+				C65B85CE63BA6073B7EAD012 /* LoginViewController.swift */,
 			);
-			name = First;
-			path = First;
+			path = View;
+			sourceTree = "<group>";
+		};
+		820E085B1E5D8AD800BA2D0D /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				820E085E1E5D8B4300BA2D0D /* BlurImageView.swift */,
+				82CB22791E6597660069BD41 /* CustomTextField.swift */,
+				82CB227B1E65AB460069BD41 /* LineView.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 		824FFA7A602190EF8CA5E9CF /* Modules */ = {
 			isa = PBXGroup;
 			children = (
-				7D97038B71151346B89F3FD8 /* First */,
+				2F017F805F0809C822E1DC31 /* Login */,
 			);
-			name = Modules;
 			path = Modules;
 			sourceTree = "<group>";
 		};
@@ -119,6 +159,7 @@
 		82A0D3CD1E5D86C100DB4D6B /* iOSMessenger */ = {
 			isa = PBXGroup;
 			children = (
+				820E085B1E5D8AD800BA2D0D /* Extension */,
 				82A0D3E11E5D872800DB4D6B /* Common */,
 				82A0D3E01E5D86FC00DB4D6B /* Storyboards */,
 				824FFA7A602190EF8CA5E9CF /* Modules */,
@@ -140,37 +181,30 @@
 			children = (
 				82A0D3CE1E5D86C100DB4D6B /* AppDelegate.swift */,
 				82A0D3D51E5D86C100DB4D6B /* Assets.xcassets */,
+				82CB227D1E65B1230069BD41 /* GoogleService-Info.plist */,
 				82A0D3DA1E5D86C100DB4D6B /* Info.plist */,
 			);
 			path = Common;
 			sourceTree = "<group>";
 		};
-		ECAFA87BCC90E235416C36DB /* Router */ = {
+		CF51A4A57A1FE95EA2CFEBE2 /* Router */ = {
 			isa = PBXGroup;
 			children = (
-				0E4EEFDA8E2FC36A3B8A995A /* FirstRouterInterface.swift */,
-				B58AB49A6B303D8317EAEEED /* FirstRouter.swift */,
+				415337B3B6E251BB09E52F95 /* LoginRouterInterface.swift */,
+				F89DBCA441F3D645C8F6209F /* LoginRouter.swift */,
 			);
-			name = Router;
 			path = Router;
 			sourceTree = "<group>";
 		};
 		F2BF72BC6BC293073819EFA8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				820E08601E5D8BA900BA2D0D /* Aspects.framework */,
+				820E08611E5D8BA900BA2D0D /* Chamomile.framework */,
+				820E08621E5D8BA900BA2D0D /* Perform.framework */,
 				27153FB879B6115B515203BE /* Pods_iOSMessenger.framework */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		F6645CE9923783F8CD79B2E9 /* View */ = {
-			isa = PBXGroup;
-			children = (
-				0580E2AD0F50902C31CB7867 /* FirstViewInterface.swift */,
-				C8C38DD1FA6A3FE158F2A53D /* FirstViewController.swift */,
-			);
-			name = View;
-			path = View;
 			sourceTree = "<group>";
 		};
 		F793BF176F0116B8C0E88675 /* Pods */ = {
@@ -180,15 +214,6 @@
 				0005374BE73A3A8EC32B5AAD /* Pods-iOSMessenger.release.xcconfig */,
 			);
 			name = Pods;
-			sourceTree = "<group>";
-		};
-		FA5F64672AEC9F70272ECE08 /* Assembler */ = {
-			isa = PBXGroup;
-			children = (
-				68104249CC02841AF038FCBF /* FirstAssember.swift */,
-			);
-			name = Assembler;
-			path = Assembler;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -204,6 +229,7 @@
 				82A0D3C91E5D86C100DB4D6B /* Resources */,
 				89D888DC3357593C5E09DD21 /* [CP] Embed Pods Frameworks */,
 				FB101E29C69EADAC3529D48B /* [CP] Copy Pods Resources */,
+				820E08661E5D8BB100BA2D0D /* Run Script */,
 			);
 			buildRules = (
 			);
@@ -254,6 +280,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				82A0D3D91E5D86C100DB4D6B /* LaunchScreen.storyboard in Resources */,
+				82CB227E1E65B1230069BD41 /* GoogleService-Info.plist in Resources */,
 				82A0D3D61E5D86C100DB4D6B /* Assets.xcassets in Resources */,
 				82A0D3D41E5D86C100DB4D6B /* Main.storyboard in Resources */,
 			);
@@ -276,6 +303,23 @@
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
+		};
+		820E08661E5D8BB100BA2D0D /* Run Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/Chamomile.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Perform.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Aspects.framework",
+			);
+			name = "Run Script";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
 		};
 		89D888DC3357593C5E09DD21 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -315,15 +359,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				82A0D3CF1E5D86C100DB4D6B /* AppDelegate.swift in Sources */,
-				84309C6047C4F085D3FA352E /* FirstAssember.swift in Sources */,
-				B33295F70A40DAF84B94D83D /* FirstViewInterface.swift in Sources */,
-				4AC5C6FBE15621FFB24B47BA /* FirstViewController.swift in Sources */,
-				C4A06C60A679618E92E0A506 /* FirstInteractorInterface.swift in Sources */,
-				7C0F268222CD7CCAF2315B13 /* FirstInteractor.swift in Sources */,
-				99C696F87E74685EAF7EE93F /* FirstPresenterInterface.swift in Sources */,
-				C25A5428494744DE4F116272 /* FirstPresenter.swift in Sources */,
-				5855E4347A3AD65397506A22 /* FirstRouterInterface.swift in Sources */,
-				FB7605FE812156765F22D622 /* FirstRouter.swift in Sources */,
+				40D1A350D78D997F5157CC86 /* LoginAssember.swift in Sources */,
+				4BF543C1DD7BA12D3B59ADFC /* LoginViewInterface.swift in Sources */,
+				437736C338E75837D2928BB3 /* LoginViewController.swift in Sources */,
+				82CB227C1E65AB460069BD41 /* LineView.swift in Sources */,
+				BDCB614E4C6700161CA2433E /* LoginInteractorInterface.swift in Sources */,
+				820E085F1E5D8B4300BA2D0D /* BlurImageView.swift in Sources */,
+				D1A3D74A9242EEDC3A26E33E /* LoginInteractor.swift in Sources */,
+				A8BD35A2F4503FEB06AB0D79 /* LoginPresenterInterface.swift in Sources */,
+				82CB227A1E6597660069BD41 /* CustomTextField.swift in Sources */,
+				D98A1F48E61CB15445793D79 /* LoginPresenter.swift in Sources */,
+				43D4CE04D9C47EF274C9FFA9 /* LoginRouterInterface.swift in Sources */,
+				EFBEBDA6F5F150E1B818CAC6 /* LoginRouter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -450,6 +497,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = iOSMessenger/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -465,6 +516,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = iOSMessenger/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -493,6 +548,7 @@
 				82A0D3DF1E5D86C100DB4D6B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
