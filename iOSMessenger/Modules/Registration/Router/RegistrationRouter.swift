@@ -21,5 +21,7 @@ final class RegistrationRouter {
 // MARK: - RegistrationRouterInput
 
 extension RegistrationRouter: RegistrationRouterInput {
-
+    func dissmissView() {
+        flowController.closeModule(animated: true)
+    }
 }

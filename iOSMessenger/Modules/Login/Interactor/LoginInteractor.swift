@@ -56,7 +56,7 @@ extension LoginInteractor: LoginInteractorInput {
                 if error != nil {
                     self.presenter.showAlert(text: "The password is invalid or the user does not have a password.")
                 } else {
-                    self.presenter.showAlert(text: "All okey")
+                    self.checkToConfirmUserEmail(user!)
                 }
             })
         }
@@ -82,4 +82,13 @@ extension LoginInteractor: LoginInteractorInput {
             }
         })
     }
+
+    func checkToConfirmUserEmail(_ user: FIRUser) {
+        if user.isEmailVerified {
+            print("Confirm")
+        } else {
+            FIRAuth.auth()?.currentUser?.sendEmailVerification(completion: nil)
+        }
+    }
+
 }

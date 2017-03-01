@@ -126,7 +126,6 @@
 				1307704A5822D395ACF98D8A /* RegistrationRouterInterface.swift */,
 				E1B7007CACA7A59D2DC8DBD6 /* RegistrationRouter.swift */,
 			);
-			name = Router;
 			path = Router;
 			sourceTree = "<group>";
 		};
@@ -154,7 +153,6 @@
 				2920500AFFD4F49C9BC718E6 /* RegistrationPresenterInterface.swift */,
 				809B91309A802F3D498B808D /* RegistrationPresenter.swift */,
 			);
-			name = Presenter;
 			path = Presenter;
 			sourceTree = "<group>";
 		};
@@ -167,7 +165,6 @@
 				6D1FB622A0F0F24DE741AEA1 /* Presenter */,
 				48E8FADF8927C35BA8C3EB6C /* Router */,
 			);
-			name = Registration;
 			path = Registration;
 			sourceTree = "<group>";
 		};
@@ -177,7 +174,6 @@
 				CC662C17E210638537AA783C /* RegistrationInteractorInterface.swift */,
 				B52D2F774A1034F82F57C315 /* RegistrationInteractor.swift */,
 			);
-			name = Interactor;
 			path = Interactor;
 			sourceTree = "<group>";
 		};
@@ -255,7 +251,6 @@
 				6B66768477E8C20FBD5338BF /* RegistrationViewInterface.swift */,
 				4FDD5E4CB8D5BF601C11AE6C /* RegistrationViewController.swift */,
 			);
-			name = View;
 			path = View;
 			sourceTree = "<group>";
 		};
@@ -293,7 +288,6 @@
 			children = (
 				D7DE1CC15EFB31A4A5090E2E /* RegistrationAssember.swift */,
 			);
-			name = Assembler;
 			path = Assembler;
 			sourceTree = "<group>";
 		};

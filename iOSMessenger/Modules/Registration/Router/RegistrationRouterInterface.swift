@@ -9,5 +9,5 @@
 // MARK: - RegistrationRouterInput
 
 protocol RegistrationRouterInput: class {
-
+    func dissmissView()
 }

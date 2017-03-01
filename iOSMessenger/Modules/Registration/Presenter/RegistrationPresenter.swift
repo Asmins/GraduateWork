@@ -24,13 +24,21 @@ final class RegistrationPresenter {
 // MARK: - RegistrationViewOutput
 
 extension RegistrationPresenter: RegistrationViewOutput {
-
+    func createUser(name: UITextField, email: UITextField, password: UITextField) {
+        interactor.createUser(name: name.text!, email: email.text!, password: password.text!)
+    }
 }
 
 // MARK: - RegistrationInteractorOutput
 
 extension RegistrationPresenter: RegistrationInteractorOutput {
+    func showAlert(_ text: String) {
+        view.showAlert(text)
+    }
 
+    func dissmisView() {
+        self.router.dissmissView()
+    }
 }
 
 // MARK: - RegistrationModuleInput

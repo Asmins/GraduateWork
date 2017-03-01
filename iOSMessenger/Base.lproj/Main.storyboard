@@ -192,6 +192,10 @@
                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
                                         <integer key="value" value="20"/>
                                     </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="leftImage" value="iconUser"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="leftPadding">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Email Address" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ERa-F7-3M6" customClass="CustomTextField" customModule="iOSMessenger" customModuleProvider="target">
@@ -242,6 +246,7 @@
                                 </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="loginTap:" destination="SjX-pa-9sl" eventType="touchUpInside" id="kKa-yl-GgR"/>
+                                    <action selector="signUp:" destination="NuN-tN-0E8" eventType="touchUpInside" id="n0n-ex-FFB"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -268,6 +273,11 @@
                             <constraint firstItem="ERa-F7-3M6" firstAttribute="top" secondItem="COg-an-Plo" secondAttribute="bottom" constant="20" id="ytz-3K-DIT"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="emailTextField" destination="ERa-F7-3M6" id="xu6-jC-oFi"/>
+                        <outlet property="nameTextField" destination="COg-an-Plo" id="A2n-CJ-s1T"/>
+                        <outlet property="passwordTextField" destination="eCF-Tc-Ih3" id="J2X-UN-9mW"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pP6-hN-JzO" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <customObject id="bwh-EB-dhB" customClass="RegistrationAssembler" customModule="iOSMessenger" customModuleProvider="target">
@@ -300,5 +310,6 @@
     <resources>
         <image name="forestRoad" width="1680" height="1050"/>
         <image name="fromSky" width="640" height="1134"/>
+        <image name="iconUser" width="30" height="30"/>
     </resources>
 </document>

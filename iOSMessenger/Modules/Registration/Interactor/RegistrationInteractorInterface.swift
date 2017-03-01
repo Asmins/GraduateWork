@@ -9,5 +9,5 @@
 // MARK: - RegistrationInteractorInput
 
 protocol RegistrationInteractorInput: class {
-
+    func createUser(name: String, email: String, password: String)
 }

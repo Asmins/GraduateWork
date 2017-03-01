@@ -9,5 +9,5 @@
 // MARK: - RegistrationViewInput
 
 protocol RegistrationViewInput: class {
-
+    func showAlert(_ text: String)
 }
