@@ -41,6 +41,9 @@ final class LoginViewController: UIViewController, FlowController {
         presenter.loginUser(email: emailTextField, password: passwordTextField)
     }
 
+    @IBAction func forgotPassword(_ sender: Any) {
+        presenter.forgotPassword(email: emailTextField)
+    }
 }
 
 // MARK: - LoginViewInput

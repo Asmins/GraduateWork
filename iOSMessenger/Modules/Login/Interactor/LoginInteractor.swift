@@ -28,6 +28,7 @@ final class LoginInteractor {
 // MARK: - LoginInteractorInput
 
 extension LoginInteractor: LoginInteractorInput {
+
     func loginUser(email: String, password: String) {
 
         if email.characters.count == 0 {
@@ -37,6 +38,17 @@ extension LoginInteractor: LoginInteractorInput {
 
         if email.characters.count <= 5 {
             self.presenter.showAlert(text: "Short Email Address")
+            return
+        }
+
+        if password.characters.count == 0 {
+            self.presenter.showAlert(text: "Empty Password")
+            return
+        }
+
+        if password.characters.count <= 6 {
+            self.presenter.showAlert(text: "Short Password")
+            return
         }
 
         if validate(email) {
@@ -46,8 +58,28 @@ extension LoginInteractor: LoginInteractorInput {
                 } else {
                     self.presenter.showAlert(text: "All okey")
                 }
-                print(user,error)
             })
         }
+    }
+
+    func forgotPassword(email: String) {
+
+        if email.characters.count == 0 {
+            self.presenter.showAlert(text: "Empty email address")
+            return
+        }
+
+        if email.characters.count <= 6 {
+            self.presenter.showAlert(text: "Short email address")
+            return
+        }
+
+        FIRAuth.auth()?.sendPasswordReset(withEmail: email, completion: { (error) in
+            if error == nil {
+                self.presenter.showAlert(text: "Check you email")
+            } else  {
+                self.presenter.showAlert(text: "Something went wrong")
+            }
+        })
     }
 }

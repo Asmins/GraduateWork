@@ -12,6 +12,8 @@
 		437736C338E75837D2928BB3 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C65B85CE63BA6073B7EAD012 /* LoginViewController.swift */; };
 		43D4CE04D9C47EF274C9FFA9 /* LoginRouterInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 415337B3B6E251BB09E52F95 /* LoginRouterInterface.swift */; };
 		4BF543C1DD7BA12D3B59ADFC /* LoginViewInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DFB98B242AA5047A16F631C /* LoginViewInterface.swift */; };
+		6EBC07A8192A9B1034230C1B /* RegistrationPresenterInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2920500AFFD4F49C9BC718E6 /* RegistrationPresenterInterface.swift */; };
+		75BCCB8BFB0A20F7FDC08AFC /* RegistrationRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1B7007CACA7A59D2DC8DBD6 /* RegistrationRouter.swift */; };
 		820E085F1E5D8B4300BA2D0D /* BlurImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 820E085E1E5D8B4300BA2D0D /* BlurImageView.swift */; };
 		820E08631E5D8BA900BA2D0D /* Aspects.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 820E08601E5D8BA900BA2D0D /* Aspects.framework */; };
 		820E08641E5D8BA900BA2D0D /* Chamomile.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 820E08611E5D8BA900BA2D0D /* Chamomile.framework */; };
@@ -23,23 +25,35 @@
 		82CB227A1E6597660069BD41 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82CB22791E6597660069BD41 /* CustomTextField.swift */; };
 		82CB227C1E65AB460069BD41 /* LineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82CB227B1E65AB460069BD41 /* LineView.swift */; };
 		82CB227E1E65B1230069BD41 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 82CB227D1E65B1230069BD41 /* GoogleService-Info.plist */; };
+		8AAC9AD89B416BCEF77CA5FC /* RegistrationInteractorInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC662C17E210638537AA783C /* RegistrationInteractorInterface.swift */; };
+		94F36A80EBEC2C3C00436D97 /* RegistrationViewInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B66768477E8C20FBD5338BF /* RegistrationViewInterface.swift */; };
+		9949E2203733FE44E3E76C7C /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FDD5E4CB8D5BF601C11AE6C /* RegistrationViewController.swift */; };
 		A8BD35A2F4503FEB06AB0D79 /* LoginPresenterInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = A368F56F3CA5FB0904AAEEEA /* LoginPresenterInterface.swift */; };
+		B29CC6A029063C1B3C9DB84B /* RegistrationPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 809B91309A802F3D498B808D /* RegistrationPresenter.swift */; };
 		BDCB614E4C6700161CA2433E /* LoginInteractorInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CC7235F78E45F3973E14E81 /* LoginInteractorInterface.swift */; };
 		D1A3D74A9242EEDC3A26E33E /* LoginInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ED03AB56D624EA38182FF1B /* LoginInteractor.swift */; };
+		D5CB56CD2ED6E45D0208D219 /* RegistrationRouterInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1307704A5822D395ACF98D8A /* RegistrationRouterInterface.swift */; };
 		D98A1F48E61CB15445793D79 /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4985BBC887BEDFAC8684A37D /* LoginPresenter.swift */; };
+		ECD9A4A104E47D99C4375368 /* RegistrationAssember.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7DE1CC15EFB31A4A5090E2E /* RegistrationAssember.swift */; };
 		EFBEBDA6F5F150E1B818CAC6 /* LoginRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F89DBCA441F3D645C8F6209F /* LoginRouter.swift */; };
+		EFFD21B1CFA5995AD66E51C9 /* RegistrationInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B52D2F774A1034F82F57C315 /* RegistrationInteractor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0005374BE73A3A8EC32B5AAD /* Pods-iOSMessenger.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSMessenger.release.xcconfig"; path = "Pods/Target Support Files/Pods-iOSMessenger/Pods-iOSMessenger.release.xcconfig"; sourceTree = "<group>"; };
+		1307704A5822D395ACF98D8A /* RegistrationRouterInterface.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RegistrationRouterInterface.swift; sourceTree = "<group>"; };
 		27153FB879B6115B515203BE /* Pods_iOSMessenger.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOSMessenger.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2920500AFFD4F49C9BC718E6 /* RegistrationPresenterInterface.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RegistrationPresenterInterface.swift; sourceTree = "<group>"; };
 		2CC7235F78E45F3973E14E81 /* LoginInteractorInterface.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LoginInteractorInterface.swift; sourceTree = "<group>"; };
 		2ED03AB56D624EA38182FF1B /* LoginInteractor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LoginInteractor.swift; sourceTree = "<group>"; };
 		415337B3B6E251BB09E52F95 /* LoginRouterInterface.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LoginRouterInterface.swift; sourceTree = "<group>"; };
 		4985BBC887BEDFAC8684A37D /* LoginPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
+		4FDD5E4CB8D5BF601C11AE6C /* RegistrationViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
 		5DFB98B242AA5047A16F631C /* LoginViewInterface.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LoginViewInterface.swift; sourceTree = "<group>"; };
+		6B66768477E8C20FBD5338BF /* RegistrationViewInterface.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RegistrationViewInterface.swift; sourceTree = "<group>"; };
 		6E6873C707635B8DDB2963C0 /* LoginAssember.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LoginAssember.swift; sourceTree = "<group>"; };
 		75DC96DFB4F9B768419E60C2 /* Pods-iOSMessenger.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSMessenger.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iOSMessenger/Pods-iOSMessenger.debug.xcconfig"; sourceTree = "<group>"; };
+		809B91309A802F3D498B808D /* RegistrationPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RegistrationPresenter.swift; sourceTree = "<group>"; };
 		820E085E1E5D8B4300BA2D0D /* BlurImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlurImageView.swift; sourceTree = "<group>"; };
 		820E08601E5D8BA900BA2D0D /* Aspects.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Aspects.framework; path = Carthage/Build/iOS/Aspects.framework; sourceTree = "<group>"; };
 		820E08611E5D8BA900BA2D0D /* Chamomile.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Chamomile.framework; path = Carthage/Build/iOS/Chamomile.framework; sourceTree = "<group>"; };
@@ -54,7 +68,11 @@
 		82CB227B1E65AB460069BD41 /* LineView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LineView.swift; sourceTree = "<group>"; };
 		82CB227D1E65B1230069BD41 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "iOSMessenger/GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
 		A368F56F3CA5FB0904AAEEEA /* LoginPresenterInterface.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LoginPresenterInterface.swift; sourceTree = "<group>"; };
+		B52D2F774A1034F82F57C315 /* RegistrationInteractor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RegistrationInteractor.swift; sourceTree = "<group>"; };
 		C65B85CE63BA6073B7EAD012 /* LoginViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		CC662C17E210638537AA783C /* RegistrationInteractorInterface.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RegistrationInteractorInterface.swift; sourceTree = "<group>"; };
+		D7DE1CC15EFB31A4A5090E2E /* RegistrationAssember.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RegistrationAssember.swift; sourceTree = "<group>"; };
+		E1B7007CACA7A59D2DC8DBD6 /* RegistrationRouter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RegistrationRouter.swift; sourceTree = "<group>"; };
 		F89DBCA441F3D645C8F6209F /* LoginRouter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LoginRouter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -102,6 +120,16 @@
 			path = Login;
 			sourceTree = "<group>";
 		};
+		48E8FADF8927C35BA8C3EB6C /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				1307704A5822D395ACF98D8A /* RegistrationRouterInterface.swift */,
+				E1B7007CACA7A59D2DC8DBD6 /* RegistrationRouter.swift */,
+			);
+			name = Router;
+			path = Router;
+			sourceTree = "<group>";
+		};
 		4FB2D349BBDFF98F93396120 /* Interactor */ = {
 			isa = PBXGroup;
 			children = (
@@ -120,6 +148,39 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		6D1FB622A0F0F24DE741AEA1 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				2920500AFFD4F49C9BC718E6 /* RegistrationPresenterInterface.swift */,
+				809B91309A802F3D498B808D /* RegistrationPresenter.swift */,
+			);
+			name = Presenter;
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		6E4C17F28255C8A3BFB952A7 /* Registration */ = {
+			isa = PBXGroup;
+			children = (
+				FA7E9D822C05B3DF4E0AA23B /* Assembler */,
+				BA576E574AFACD2066D23323 /* View */,
+				745D2ECD5AACF45E4020805E /* Interactor */,
+				6D1FB622A0F0F24DE741AEA1 /* Presenter */,
+				48E8FADF8927C35BA8C3EB6C /* Router */,
+			);
+			name = Registration;
+			path = Registration;
+			sourceTree = "<group>";
+		};
+		745D2ECD5AACF45E4020805E /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				CC662C17E210638537AA783C /* RegistrationInteractorInterface.swift */,
+				B52D2F774A1034F82F57C315 /* RegistrationInteractor.swift */,
+			);
+			name = Interactor;
+			path = Interactor;
+			sourceTree = "<group>";
+		};
 		820E085B1E5D8AD800BA2D0D /* Extension */ = {
 			isa = PBXGroup;
 			children = (
@@ -134,6 +195,7 @@
 			isa = PBXGroup;
 			children = (
 				2F017F805F0809C822E1DC31 /* Login */,
+				6E4C17F28255C8A3BFB952A7 /* Registration */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -187,6 +249,16 @@
 			path = Common;
 			sourceTree = "<group>";
 		};
+		BA576E574AFACD2066D23323 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6B66768477E8C20FBD5338BF /* RegistrationViewInterface.swift */,
+				4FDD5E4CB8D5BF601C11AE6C /* RegistrationViewController.swift */,
+			);
+			name = View;
+			path = View;
+			sourceTree = "<group>";
+		};
 		CF51A4A57A1FE95EA2CFEBE2 /* Router */ = {
 			isa = PBXGroup;
 			children = (
@@ -214,6 +286,15 @@
 				0005374BE73A3A8EC32B5AAD /* Pods-iOSMessenger.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		FA7E9D822C05B3DF4E0AA23B /* Assembler */ = {
+			isa = PBXGroup;
+			children = (
+				D7DE1CC15EFB31A4A5090E2E /* RegistrationAssember.swift */,
+			);
+			name = Assembler;
+			path = Assembler;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -371,6 +452,15 @@
 				D98A1F48E61CB15445793D79 /* LoginPresenter.swift in Sources */,
 				43D4CE04D9C47EF274C9FFA9 /* LoginRouterInterface.swift in Sources */,
 				EFBEBDA6F5F150E1B818CAC6 /* LoginRouter.swift in Sources */,
+				ECD9A4A104E47D99C4375368 /* RegistrationAssember.swift in Sources */,
+				94F36A80EBEC2C3C00436D97 /* RegistrationViewInterface.swift in Sources */,
+				9949E2203733FE44E3E76C7C /* RegistrationViewController.swift in Sources */,
+				8AAC9AD89B416BCEF77CA5FC /* RegistrationInteractorInterface.swift in Sources */,
+				EFFD21B1CFA5995AD66E51C9 /* RegistrationInteractor.swift in Sources */,
+				6EBC07A8192A9B1034230C1B /* RegistrationPresenterInterface.swift in Sources */,
+				B29CC6A029063C1B3C9DB84B /* RegistrationPresenter.swift in Sources */,
+				D5CB56CD2ED6E45D0208D219 /* RegistrationRouterInterface.swift in Sources */,
+				75BCCB8BFB0A20F7FDC08AFC /* RegistrationRouter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

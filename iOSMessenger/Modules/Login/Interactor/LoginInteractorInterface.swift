@@ -9,5 +9,6 @@
 // MARK: - LoginInteractorInput
 
 protocol LoginInteractorInput: class {
+    func forgotPassword(email: String)
     func loginUser(email: String, password: String)
 }

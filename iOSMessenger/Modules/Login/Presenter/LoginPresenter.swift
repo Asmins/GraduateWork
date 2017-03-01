@@ -27,6 +27,10 @@ extension LoginPresenter: LoginViewOutput {
     func loginUser(email: UITextField, password: UITextField) {
         interactor.loginUser(email: email.text!, password: password.text!)
     }
+
+    func forgotPassword(email: UITextField) {
+        interactor.forgotPassword(email: email.text!)
+    }
 }
 
 // MARK: - LoginInteractorOutput
