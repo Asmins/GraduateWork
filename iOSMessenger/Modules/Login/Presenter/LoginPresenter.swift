@@ -24,12 +24,20 @@ final class LoginPresenter {
 // MARK: - LoginViewOutput
 
 extension LoginPresenter: LoginViewOutput {
-    func loginUser(email: UITextField, password: UITextField) {
-        interactor.loginUser(email: email.text!, password: password.text!)
+    func loginUser(email: UITextField, password: UITextField, button: UIButton) {
+        interactor.loginUser(email: email.text!, password: password.text!, button: button)
+    }
+    
+    func openRegScreen() {
+        router.openRegScreen(regViewOutput: self)
     }
 
-    func forgotPassword(email: UITextField) {
-        interactor.forgotPassword(email: email.text!)
+    func openForgotPassword() {
+        router.openForgotScreen(viewModuleOutput: self)
+    }
+
+    func resendEmailConfirm() {
+        interactor.resendEmailConfirm()
     }
 }
 
@@ -45,4 +53,8 @@ extension LoginPresenter: LoginInteractorOutput {
 
 extension LoginPresenter: LoginModuleInput {
 
+}
+
+extension LoginPresenter: RegistrationModuleOutput, ForgotPasswordModuleOutput {
+    
 }

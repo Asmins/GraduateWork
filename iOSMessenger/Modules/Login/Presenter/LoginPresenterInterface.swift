@@ -11,8 +11,10 @@ import Chamomile
 // MARK: - LoginViewOutput
 
 protocol LoginViewOutput: class {
-    func forgotPassword(email: UITextField)
-    func loginUser(email: UITextField, password: UITextField)
+    func openRegScreen()
+    func openForgotPassword()
+    func resendEmailConfirm()
+    func loginUser(email: UITextField, password: UITextField, button: UIButton)
 }
 
 // MARK: - LoginInteractorOutput

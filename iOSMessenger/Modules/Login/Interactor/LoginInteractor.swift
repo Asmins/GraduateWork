@@ -5,6 +5,7 @@
 //  Created by Asmins on 22/02/2017.
 //  Copyright © 2017 GraduateWork. All rights reserved.
 //
+import UIKit
 import FirebaseAuth
 
 // MARK: - LoginInteractor
@@ -29,7 +30,7 @@ final class LoginInteractor {
 
 extension LoginInteractor: LoginInteractorInput {
 
-    func loginUser(email: String, password: String) {
+    func loginUser(email: String, password: String, button: UIButton) {
 
         if email.characters.count == 0 {
             self.presenter.showAlert(text: "Empty Email Address")
@@ -56,38 +57,26 @@ extension LoginInteractor: LoginInteractorInput {
                 if error != nil {
                     self.presenter.showAlert(text: "The password is invalid or the user does not have a password.")
                 } else {
-                    self.checkToConfirmUserEmail(user!)
+                    self.checkToConfirmUserEmail(user!, button: button)
                 }
             })
         }
     }
 
-    func forgotPassword(email: String) {
-
-        if email.characters.count == 0 {
-            self.presenter.showAlert(text: "Empty email address")
-            return
-        }
-
-        if email.characters.count <= 6 {
-            self.presenter.showAlert(text: "Short email address")
-            return
-        }
-
-        FIRAuth.auth()?.sendPasswordReset(withEmail: email, completion: { (error) in
+    func resendEmailConfirm() {
+        FIRAuth.auth()?.currentUser?.sendEmailVerification(completion: { (error) in
             if error == nil {
-                self.presenter.showAlert(text: "Check you email")
-            } else  {
-                self.presenter.showAlert(text: "Something went wrong")
+                self.presenter.showAlert(text: "Mail was send")
             }
         })
     }
 
-    func checkToConfirmUserEmail(_ user: FIRUser) {
+    func checkToConfirmUserEmail(_ user: FIRUser, button: UIButton) {
         if user.isEmailVerified {
-            print("Confirm")
+            print("Go to next screen")
         } else {
-            FIRAuth.auth()?.currentUser?.sendEmailVerification(completion: nil)
+            button.isHidden = false
+            self.presenter.showAlert(text: "You email don`t confirmation")
         }
     }
 

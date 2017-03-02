@@ -12,6 +12,7 @@ import Chamomile
 
 final class LoginViewController: UIViewController, FlowController {
 
+    @IBOutlet weak var resendButton: UIButton!
     @IBOutlet weak var emailTextField: CustomTextField!
     @IBOutlet weak var passwordTextField: CustomTextField!
     // MARK: - VIPER stack
@@ -20,17 +21,17 @@ final class LoginViewController: UIViewController, FlowController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
     }
 
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        self.navigationController?.setNavigationBarHidden(true, animated: false)
+        resendButton.isHidden = true
+        self.navigationController?.setNavigationBarHidden(true, animated: true)
     }
 
     override func viewDidDisappear(_ animated: Bool) {
         super.viewDidDisappear(animated)
-        self.navigationController?.setNavigationBarHidden(false, animated: false)
+        self.navigationController?.setNavigationBarHidden(false, animated: true)
     }
 
     override var preferredStatusBarStyle: UIStatusBarStyle {
@@ -38,11 +39,19 @@ final class LoginViewController: UIViewController, FlowController {
     }
 
     @IBAction func loginTap(_ sender: Any) {
-        presenter.loginUser(email: emailTextField, password: passwordTextField)
+        presenter.loginUser(email: emailTextField, password: passwordTextField, button: resendButton)
+    }
+
+    @IBAction func registrationUser(_ sender: Any) {
+        presenter.openRegScreen()
+    }
+
+    @IBAction func resendConfirmationEmailTap(_ sender: Any) {
+        presenter.resendEmailConfirm()
     }
 
     @IBAction func forgotPassword(_ sender: Any) {
-        presenter.forgotPassword(email: emailTextField)
+        presenter.openForgotPassword()
     }
 }
 

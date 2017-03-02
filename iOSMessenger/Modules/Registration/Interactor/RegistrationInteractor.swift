@@ -40,16 +40,19 @@ extension RegistrationInteractor: RegistrationInteractorInput {
         }
 
         if validate(email) {
-            FIRAuth.auth()?.createUser(withEmail: email, password: password, completion: { (user, error) in
-                if error == nil {
-                    let currentUser = user?.profileChangeRequest()
-                    currentUser?.displayName = name
-                    currentUser?.commitChanges(completion: nil)
-                    self.presenter.dissmisView()
-                } else {
-                    self.presenter.showAlert((error?.localizedDescription)!)
-                }
-            }) 
+            DispatchQueue.main.async {
+                FIRAuth.auth()?.createUser(withEmail: email, password: password, completion: { (user, error) in
+                    if error == nil {
+                        let currentUser = user?.profileChangeRequest()
+                        currentUser?.displayName = name
+                        currentUser?.commitChanges(completion: nil)
+                        FIRAuth.auth()?.currentUser?.sendEmailVerification(completion: nil)
+                        self.presenter.dissmisView()
+                    } else {
+                        self.presenter.showAlert((error?.localizedDescription)!)
+                    }
+                })
+            }
         } else {
             self.presenter.showAlert("Incorrect Email Address")
         }

@@ -7,17 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1575588F4ABB5909F0D1DEFC /* ForgotPasswordInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98F1D32DCDDB8FBE8F567302 /* ForgotPasswordInteractor.swift */; };
 		1E0C6BB4757ADCD8635C6BE5 /* Pods_iOSMessenger.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27153FB879B6115B515203BE /* Pods_iOSMessenger.framework */; };
+		284C3A7E9C2449034E40969C /* ForgotPasswordInteractorInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE870756848344DF0EB251AA /* ForgotPasswordInteractorInterface.swift */; };
 		40D1A350D78D997F5157CC86 /* LoginAssember.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E6873C707635B8DDB2963C0 /* LoginAssember.swift */; };
 		437736C338E75837D2928BB3 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C65B85CE63BA6073B7EAD012 /* LoginViewController.swift */; };
 		43D4CE04D9C47EF274C9FFA9 /* LoginRouterInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 415337B3B6E251BB09E52F95 /* LoginRouterInterface.swift */; };
 		4BF543C1DD7BA12D3B59ADFC /* LoginViewInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DFB98B242AA5047A16F631C /* LoginViewInterface.swift */; };
+		5A4E0BE35D49C9E510469BAB /* ForgotPasswordPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DC7C3A478F48B6C2FBCC6CF /* ForgotPasswordPresenter.swift */; };
+		662F2F14B6F231A5F083EB9A /* ForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03709D60BEBEA3EF56614EC4 /* ForgotPasswordViewController.swift */; };
 		6EBC07A8192A9B1034230C1B /* RegistrationPresenterInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2920500AFFD4F49C9BC718E6 /* RegistrationPresenterInterface.swift */; };
 		75BCCB8BFB0A20F7FDC08AFC /* RegistrationRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1B7007CACA7A59D2DC8DBD6 /* RegistrationRouter.swift */; };
+		76A90D764787525D6AEC003A /* ForgotPasswordPresenterInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE70FACBDAA9B7BA5DB2666 /* ForgotPasswordPresenterInterface.swift */; };
 		820E085F1E5D8B4300BA2D0D /* BlurImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 820E085E1E5D8B4300BA2D0D /* BlurImageView.swift */; };
 		820E08631E5D8BA900BA2D0D /* Aspects.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 820E08601E5D8BA900BA2D0D /* Aspects.framework */; };
 		820E08641E5D8BA900BA2D0D /* Chamomile.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 820E08611E5D8BA900BA2D0D /* Chamomile.framework */; };
 		820E08651E5D8BA900BA2D0D /* Perform.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 820E08621E5D8BA900BA2D0D /* Perform.framework */; };
+		826C9FEB1E6816950029B3DC /* CustomNavController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 826C9FEA1E6816950029B3DC /* CustomNavController.swift */; };
+		826C9FED1E6826920029B3DC /* AlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 826C9FEC1E6826920029B3DC /* AlertViewController.swift */; };
+		827012271E66ED01005E6CD2 /* SegueIndentifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 827012261E66ED01005E6CD2 /* SegueIndentifier.swift */; };
 		82A0D3CF1E5D86C100DB4D6B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82A0D3CE1E5D86C100DB4D6B /* AppDelegate.swift */; };
 		82A0D3D41E5D86C100DB4D6B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 82A0D3D21E5D86C100DB4D6B /* Main.storyboard */; };
 		82A0D3D61E5D86C100DB4D6B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 82A0D3D51E5D86C100DB4D6B /* Assets.xcassets */; };
@@ -31,26 +39,34 @@
 		A8BD35A2F4503FEB06AB0D79 /* LoginPresenterInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = A368F56F3CA5FB0904AAEEEA /* LoginPresenterInterface.swift */; };
 		B29CC6A029063C1B3C9DB84B /* RegistrationPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 809B91309A802F3D498B808D /* RegistrationPresenter.swift */; };
 		BDCB614E4C6700161CA2433E /* LoginInteractorInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CC7235F78E45F3973E14E81 /* LoginInteractorInterface.swift */; };
+		C2EF0543E71A812641F5F082 /* ForgotPasswordAssember.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3304560958D232B31E20F9A /* ForgotPasswordAssember.swift */; };
+		CC6359332919E53ED5B006D9 /* ForgotPasswordRouterInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C0C3F1E53E1D12C561213C9 /* ForgotPasswordRouterInterface.swift */; };
 		D1A3D74A9242EEDC3A26E33E /* LoginInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ED03AB56D624EA38182FF1B /* LoginInteractor.swift */; };
 		D5CB56CD2ED6E45D0208D219 /* RegistrationRouterInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1307704A5822D395ACF98D8A /* RegistrationRouterInterface.swift */; };
 		D98A1F48E61CB15445793D79 /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4985BBC887BEDFAC8684A37D /* LoginPresenter.swift */; };
+		E3766A812EE847DF93CBEE51 /* ForgotPasswordRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 335EDB91C7680F584510C9C6 /* ForgotPasswordRouter.swift */; };
 		ECD9A4A104E47D99C4375368 /* RegistrationAssember.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7DE1CC15EFB31A4A5090E2E /* RegistrationAssember.swift */; };
+		ED4B87F9AFEC0642DB35F47B /* ForgotPasswordViewInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9386FE68D23D82177A33EDCC /* ForgotPasswordViewInterface.swift */; };
 		EFBEBDA6F5F150E1B818CAC6 /* LoginRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F89DBCA441F3D645C8F6209F /* LoginRouter.swift */; };
 		EFFD21B1CFA5995AD66E51C9 /* RegistrationInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B52D2F774A1034F82F57C315 /* RegistrationInteractor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0005374BE73A3A8EC32B5AAD /* Pods-iOSMessenger.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSMessenger.release.xcconfig"; path = "Pods/Target Support Files/Pods-iOSMessenger/Pods-iOSMessenger.release.xcconfig"; sourceTree = "<group>"; };
+		03709D60BEBEA3EF56614EC4 /* ForgotPasswordViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewController.swift; sourceTree = "<group>"; };
 		1307704A5822D395ACF98D8A /* RegistrationRouterInterface.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RegistrationRouterInterface.swift; sourceTree = "<group>"; };
 		27153FB879B6115B515203BE /* Pods_iOSMessenger.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOSMessenger.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2920500AFFD4F49C9BC718E6 /* RegistrationPresenterInterface.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RegistrationPresenterInterface.swift; sourceTree = "<group>"; };
 		2CC7235F78E45F3973E14E81 /* LoginInteractorInterface.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LoginInteractorInterface.swift; sourceTree = "<group>"; };
 		2ED03AB56D624EA38182FF1B /* LoginInteractor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LoginInteractor.swift; sourceTree = "<group>"; };
+		335EDB91C7680F584510C9C6 /* ForgotPasswordRouter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ForgotPasswordRouter.swift; sourceTree = "<group>"; };
+		3FE70FACBDAA9B7BA5DB2666 /* ForgotPasswordPresenterInterface.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ForgotPasswordPresenterInterface.swift; sourceTree = "<group>"; };
 		415337B3B6E251BB09E52F95 /* LoginRouterInterface.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LoginRouterInterface.swift; sourceTree = "<group>"; };
 		4985BBC887BEDFAC8684A37D /* LoginPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
 		4FDD5E4CB8D5BF601C11AE6C /* RegistrationViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
 		5DFB98B242AA5047A16F631C /* LoginViewInterface.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LoginViewInterface.swift; sourceTree = "<group>"; };
 		6B66768477E8C20FBD5338BF /* RegistrationViewInterface.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RegistrationViewInterface.swift; sourceTree = "<group>"; };
+		6C0C3F1E53E1D12C561213C9 /* ForgotPasswordRouterInterface.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ForgotPasswordRouterInterface.swift; sourceTree = "<group>"; };
 		6E6873C707635B8DDB2963C0 /* LoginAssember.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LoginAssember.swift; sourceTree = "<group>"; };
 		75DC96DFB4F9B768419E60C2 /* Pods-iOSMessenger.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSMessenger.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iOSMessenger/Pods-iOSMessenger.debug.xcconfig"; sourceTree = "<group>"; };
 		809B91309A802F3D498B808D /* RegistrationPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RegistrationPresenter.swift; sourceTree = "<group>"; };
@@ -58,6 +74,9 @@
 		820E08601E5D8BA900BA2D0D /* Aspects.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Aspects.framework; path = Carthage/Build/iOS/Aspects.framework; sourceTree = "<group>"; };
 		820E08611E5D8BA900BA2D0D /* Chamomile.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Chamomile.framework; path = Carthage/Build/iOS/Chamomile.framework; sourceTree = "<group>"; };
 		820E08621E5D8BA900BA2D0D /* Perform.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Perform.framework; path = Carthage/Build/iOS/Perform.framework; sourceTree = "<group>"; };
+		826C9FEA1E6816950029B3DC /* CustomNavController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomNavController.swift; sourceTree = "<group>"; };
+		826C9FEC1E6826920029B3DC /* AlertViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertViewController.swift; sourceTree = "<group>"; };
+		827012261E66ED01005E6CD2 /* SegueIndentifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SegueIndentifier.swift; sourceTree = "<group>"; };
 		82A0D3CB1E5D86C100DB4D6B /* iOSMessenger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSMessenger.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		82A0D3CE1E5D86C100DB4D6B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = ../AppDelegate.swift; sourceTree = "<group>"; };
 		82A0D3D31E5D86C100DB4D6B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -67,12 +86,17 @@
 		82CB22791E6597660069BD41 /* CustomTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		82CB227B1E65AB460069BD41 /* LineView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LineView.swift; sourceTree = "<group>"; };
 		82CB227D1E65B1230069BD41 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "iOSMessenger/GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
+		9386FE68D23D82177A33EDCC /* ForgotPasswordViewInterface.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewInterface.swift; sourceTree = "<group>"; };
+		98F1D32DCDDB8FBE8F567302 /* ForgotPasswordInteractor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ForgotPasswordInteractor.swift; sourceTree = "<group>"; };
+		9DC7C3A478F48B6C2FBCC6CF /* ForgotPasswordPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ForgotPasswordPresenter.swift; sourceTree = "<group>"; };
+		A3304560958D232B31E20F9A /* ForgotPasswordAssember.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ForgotPasswordAssember.swift; sourceTree = "<group>"; };
 		A368F56F3CA5FB0904AAEEEA /* LoginPresenterInterface.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LoginPresenterInterface.swift; sourceTree = "<group>"; };
 		B52D2F774A1034F82F57C315 /* RegistrationInteractor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RegistrationInteractor.swift; sourceTree = "<group>"; };
 		C65B85CE63BA6073B7EAD012 /* LoginViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		CC662C17E210638537AA783C /* RegistrationInteractorInterface.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RegistrationInteractorInterface.swift; sourceTree = "<group>"; };
 		D7DE1CC15EFB31A4A5090E2E /* RegistrationAssember.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RegistrationAssember.swift; sourceTree = "<group>"; };
 		E1B7007CACA7A59D2DC8DBD6 /* RegistrationRouter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RegistrationRouter.swift; sourceTree = "<group>"; };
+		EE870756848344DF0EB251AA /* ForgotPasswordInteractorInterface.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ForgotPasswordInteractorInterface.swift; sourceTree = "<group>"; };
 		F89DBCA441F3D645C8F6209F /* LoginRouter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LoginRouter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -97,6 +121,15 @@
 				6E6873C707635B8DDB2963C0 /* LoginAssember.swift */,
 			);
 			path = Assembler;
+			sourceTree = "<group>";
+		};
+		1E5F377D522C5DBD0BB9EF85 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				EE870756848344DF0EB251AA /* ForgotPasswordInteractorInterface.swift */,
+				98F1D32DCDDB8FBE8F567302 /* ForgotPasswordInteractor.swift */,
+			);
+			path = Interactor;
 			sourceTree = "<group>";
 		};
 		2E95F177FA400D3FF88AB172 /* Presenter */ = {
@@ -132,8 +165,8 @@
 		4FB2D349BBDFF98F93396120 /* Interactor */ = {
 			isa = PBXGroup;
 			children = (
-				2CC7235F78E45F3973E14E81 /* LoginInteractorInterface.swift */,
 				2ED03AB56D624EA38182FF1B /* LoginInteractor.swift */,
+				2CC7235F78E45F3973E14E81 /* LoginInteractorInterface.swift */,
 			);
 			path = Interactor;
 			sourceTree = "<group>";
@@ -168,6 +201,18 @@
 			path = Registration;
 			sourceTree = "<group>";
 		};
+		71F06A84F80B0D1B96FA837B /* ForgotPassword */ = {
+			isa = PBXGroup;
+			children = (
+				A20F2366C4CCCE09DF25D542 /* Assembler */,
+				9990CA9ED8AD9EDD514E6001 /* View */,
+				1E5F377D522C5DBD0BB9EF85 /* Interactor */,
+				B089A63CF71F89FB5B0CAAA5 /* Presenter */,
+				C193335AE506D630CD9E5353 /* Router */,
+			);
+			path = ForgotPassword;
+			sourceTree = "<group>";
+		};
 		745D2ECD5AACF45E4020805E /* Interactor */ = {
 			isa = PBXGroup;
 			children = (
@@ -183,6 +228,9 @@
 				820E085E1E5D8B4300BA2D0D /* BlurImageView.swift */,
 				82CB22791E6597660069BD41 /* CustomTextField.swift */,
 				82CB227B1E65AB460069BD41 /* LineView.swift */,
+				827012261E66ED01005E6CD2 /* SegueIndentifier.swift */,
+				826C9FEA1E6816950029B3DC /* CustomNavController.swift */,
+				826C9FEC1E6826920029B3DC /* AlertViewController.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -192,6 +240,7 @@
 			children = (
 				2F017F805F0809C822E1DC31 /* Login */,
 				6E4C17F28255C8A3BFB952A7 /* Registration */,
+				71F06A84F80B0D1B96FA837B /* ForgotPassword */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -245,6 +294,32 @@
 			path = Common;
 			sourceTree = "<group>";
 		};
+		9990CA9ED8AD9EDD514E6001 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9386FE68D23D82177A33EDCC /* ForgotPasswordViewInterface.swift */,
+				03709D60BEBEA3EF56614EC4 /* ForgotPasswordViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A20F2366C4CCCE09DF25D542 /* Assembler */ = {
+			isa = PBXGroup;
+			children = (
+				A3304560958D232B31E20F9A /* ForgotPasswordAssember.swift */,
+			);
+			path = Assembler;
+			sourceTree = "<group>";
+		};
+		B089A63CF71F89FB5B0CAAA5 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				3FE70FACBDAA9B7BA5DB2666 /* ForgotPasswordPresenterInterface.swift */,
+				9DC7C3A478F48B6C2FBCC6CF /* ForgotPasswordPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
 		BA576E574AFACD2066D23323 /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -252,6 +327,15 @@
 				4FDD5E4CB8D5BF601C11AE6C /* RegistrationViewController.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		C193335AE506D630CD9E5353 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				6C0C3F1E53E1D12C561213C9 /* ForgotPasswordRouterInterface.swift */,
+				335EDB91C7680F584510C9C6 /* ForgotPasswordRouter.swift */,
+			);
+			path = Router;
 			sourceTree = "<group>";
 		};
 		CF51A4A57A1FE95EA2CFEBE2 /* Router */ = {
@@ -434,6 +518,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				82A0D3CF1E5D86C100DB4D6B /* AppDelegate.swift in Sources */,
+				826C9FEB1E6816950029B3DC /* CustomNavController.swift in Sources */,
 				40D1A350D78D997F5157CC86 /* LoginAssember.swift in Sources */,
 				4BF543C1DD7BA12D3B59ADFC /* LoginViewInterface.swift in Sources */,
 				437736C338E75837D2928BB3 /* LoginViewController.swift in Sources */,
@@ -453,8 +538,19 @@
 				EFFD21B1CFA5995AD66E51C9 /* RegistrationInteractor.swift in Sources */,
 				6EBC07A8192A9B1034230C1B /* RegistrationPresenterInterface.swift in Sources */,
 				B29CC6A029063C1B3C9DB84B /* RegistrationPresenter.swift in Sources */,
+				827012271E66ED01005E6CD2 /* SegueIndentifier.swift in Sources */,
 				D5CB56CD2ED6E45D0208D219 /* RegistrationRouterInterface.swift in Sources */,
 				75BCCB8BFB0A20F7FDC08AFC /* RegistrationRouter.swift in Sources */,
+				C2EF0543E71A812641F5F082 /* ForgotPasswordAssember.swift in Sources */,
+				826C9FED1E6826920029B3DC /* AlertViewController.swift in Sources */,
+				ED4B87F9AFEC0642DB35F47B /* ForgotPasswordViewInterface.swift in Sources */,
+				662F2F14B6F231A5F083EB9A /* ForgotPasswordViewController.swift in Sources */,
+				284C3A7E9C2449034E40969C /* ForgotPasswordInteractorInterface.swift in Sources */,
+				1575588F4ABB5909F0D1DEFC /* ForgotPasswordInteractor.swift in Sources */,
+				76A90D764787525D6AEC003A /* ForgotPasswordPresenterInterface.swift in Sources */,
+				5A4E0BE35D49C9E510469BAB /* ForgotPasswordPresenter.swift in Sources */,
+				CC6359332919E53ED5B006D9 /* ForgotPasswordRouterInterface.swift in Sources */,
+				E3766A812EE847DF93CBEE51 /* ForgotPasswordRouter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

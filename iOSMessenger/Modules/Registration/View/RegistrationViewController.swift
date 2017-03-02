@@ -21,20 +21,13 @@ final class RegistrationViewController: UIViewController, FlowController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.navigationController?.setupNavController(navController: self.navigationController!)
         title = "Registration"
-        setupNavController()
     }
 
     override func viewDidDisappear(_ animated: Bool) {
         super.viewDidDisappear(animated)
         self.navigationController?.setNavigationBarHidden(true, animated: false)
-    }
-
-    func setupNavController() {
-        self.navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.black]
-        self.navigationController?.navigationBar.tintColor = UIColor.black
-        self.navigationController?.navigationBar.backgroundColor = UIColor.gray
-        self.navigationController?.navigationBar.isTranslucent = true
     }
 
     @IBAction func signUp(_ sender: Any) {
