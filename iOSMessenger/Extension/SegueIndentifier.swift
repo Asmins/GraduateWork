@@ -10,4 +10,5 @@ import Foundation
 struct SegueIndentifier {
     let regScreen = "regScreen"
     let forgotPassword = "forgotPassword"
+    let userInfo = "userInfo"
 }

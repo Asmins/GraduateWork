@@ -9,6 +9,7 @@
 // MARK: - LoginRouterInput
 
 protocol LoginRouterInput: class {
+    func openUserInfo(userInfoModuleOutput: UserInfoModuleOutput)
     func openRegScreen(regViewOutput: RegistrationModuleOutput )
     func openForgotScreen(viewModuleOutput: ForgotPasswordModuleOutput )
 }

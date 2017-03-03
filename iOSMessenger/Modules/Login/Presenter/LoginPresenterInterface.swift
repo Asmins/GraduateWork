@@ -21,6 +21,7 @@ protocol LoginViewOutput: class {
 
 protocol LoginInteractorOutput: class {
     func showAlert(text: String)
+    func openUserInfo()
 }
 
 // MARK: - LoginModuleInput

@@ -47,6 +47,10 @@ extension LoginPresenter: LoginInteractorOutput {
     func showAlert(text: String) {
         view.showAlert(text: text)
     }
+
+    func openUserInfo() {
+        router.openUserInfo(userInfoModuleOutput: self)
+    }
 }
 
 // MARK: - LoginModuleInput
@@ -55,6 +59,6 @@ extension LoginPresenter: LoginModuleInput {
 
 }
 
-extension LoginPresenter: RegistrationModuleOutput, ForgotPasswordModuleOutput {
+extension LoginPresenter: RegistrationModuleOutput, ForgotPasswordModuleOutput, UserInfoModuleOutput {
     
 }

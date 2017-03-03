@@ -73,7 +73,7 @@ extension LoginInteractor: LoginInteractorInput {
 
     func checkToConfirmUserEmail(_ user: FIRUser, button: UIButton) {
         if user.isEmailVerified {
-            print("Go to next screen")
+            self.presenter.openUserInfo()
         } else {
             button.isHidden = false
             self.presenter.showAlert(text: "You email don`t confirmation")

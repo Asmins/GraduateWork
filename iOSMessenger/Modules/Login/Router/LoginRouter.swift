@@ -34,6 +34,13 @@ extension LoginRouter: LoginRouterInput {
             return viewModuleOutput
         })
     }
+
+    func openUserInfo(userInfoModuleOutput: UserInfoModuleOutput) {
+        flowController.openModule(using: .openUserInfo, completion: {
+            guard let moduleInput = $0 as? UserInfoModuleInput else { fatalError() }
+            return userInfoModuleOutput
+        })
+    }
 }
 
 extension Segue {
@@ -43,5 +50,9 @@ extension Segue {
 
     static var openForgotScreen: Segue<ForgotPasswordViewController> {
         return .init(identifier: SegueIndentifier().forgotPassword)
+    }
+
+    static var openUserInfo: Segue<UserInfoViewController> {
+        return .init(identifier: SegueIndentifier().userInfo)
     }
 }

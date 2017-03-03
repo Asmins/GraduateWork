@@ -138,7 +138,6 @@
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="MfI-l8-E26" secondAttribute="trailing" constant="20" id="18s-hQ-Ee9"/>
                             <constraint firstAttribute="trailing" secondItem="1t1-Kx-qCI" secondAttribute="trailing" id="3Gd-cK-iUZ"/>
-                            <constraint firstItem="Dqk-hr-bfD" firstAttribute="top" secondItem="FXc-Xo-Wos" secondAttribute="top" constant="434.5" id="56y-cC-9Lr"/>
                             <constraint firstItem="pzf-Kt-dDa" firstAttribute="top" secondItem="7EQ-EP-pza" secondAttribute="bottom" constant="20" id="7it-GI-iEv"/>
                             <constraint firstItem="1t1-Kx-qCI" firstAttribute="top" secondItem="FXc-Xo-Wos" secondAttribute="top" id="9KC-Tq-tje"/>
                             <constraint firstItem="MfI-l8-E26" firstAttribute="top" secondItem="pzf-Kt-dDa" secondAttribute="bottom" constant="10" id="AFV-Yl-HY0"/>
@@ -156,7 +155,6 @@
                             <constraint firstItem="MfI-l8-E26" firstAttribute="height" secondItem="pzf-Kt-dDa" secondAttribute="height" id="XVO-r1-s6J"/>
                             <constraint firstItem="pzf-Kt-dDa" firstAttribute="leading" secondItem="FXc-Xo-Wos" secondAttribute="leading" constant="20" id="XqE-Z8-kTV"/>
                             <constraint firstItem="1t1-Kx-qCI" firstAttribute="leading" secondItem="FXc-Xo-Wos" secondAttribute="leading" id="aK1-0F-4uD"/>
-                            <constraint firstAttribute="bottom" secondItem="Dqk-hr-bfD" secondAttribute="bottom" constant="198.5" id="bYm-sw-6oS"/>
                             <constraint firstItem="7EQ-EP-pza" firstAttribute="centerY" secondItem="1t1-Kx-qCI" secondAttribute="centerY" id="eWo-39-yU3"/>
                             <constraint firstItem="LrV-Uc-t5f" firstAttribute="leading" secondItem="Dqk-hr-bfD" secondAttribute="trailing" constant="5" id="gVV-oi-Ldb"/>
                             <constraint firstAttribute="trailing" secondItem="XFj-Qg-2UW" secondAttribute="trailing" constant="20" id="hrS-tp-PTM"/>
@@ -174,6 +172,7 @@
                         <outlet property="resendButton" destination="XFj-Qg-2UW" id="thv-wk-cCd"/>
                         <segue destination="NuN-tN-0E8" kind="show" identifier="regScreen" id="9Oh-Iu-ss4"/>
                         <segue destination="3Z4-Xp-utC" kind="show" identifier="forgotPassword" id="KxD-wI-y97"/>
+                        <segue destination="BcY-3I-gYv" kind="show" identifier="userInfo" id="dpb-n2-8WJ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8Ta-3y-htR" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -184,6 +183,60 @@
                 </customObject>
             </objects>
             <point key="canvasLocation" x="917.60000000000002" y="184.85757121439281"/>
+        </scene>
+        <!--View-->
+        <scene sceneID="5mE-6C-fRm">
+            <objects>
+                <viewController title="User Info" id="BcY-3I-gYv" customClass="UserInfoViewController" customModule="iOSMessenger" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="iG9-Gf-mrx"/>
+                        <viewControllerLayoutGuide type="bottom" id="Tay-kS-aC2"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="tqY-Hh-mHq">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hv4-QA-0Cd">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="200"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Y1t-Rr-2pr">
+                                        <rect key="frame" x="137" y="80" width="100" height="100"/>
+                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="100" id="NWl-W2-lMv"/>
+                                            <constraint firstAttribute="height" constant="100" id="xYJ-Oo-lCo"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="40"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.32850273922292916" green="1" blue="0.25657710527878164" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="Tfo-0w-z6d"/>
+                                    <constraint firstItem="Y1t-Rr-2pr" firstAttribute="top" secondItem="Hv4-QA-0Cd" secondAttribute="top" constant="80" id="W0b-6f-1aj"/>
+                                    <constraint firstItem="Y1t-Rr-2pr" firstAttribute="centerX" secondItem="Hv4-QA-0Cd" secondAttribute="centerX" id="nWx-cJ-LmT"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Hv4-QA-0Cd" secondAttribute="trailing" id="0Bh-hS-eHr"/>
+                            <constraint firstItem="Hv4-QA-0Cd" firstAttribute="top" secondItem="tqY-Hh-mHq" secondAttribute="top" id="Gi0-cB-Tah"/>
+                            <constraint firstItem="Hv4-QA-0Cd" firstAttribute="leading" secondItem="tqY-Hh-mHq" secondAttribute="leading" id="PpD-tj-pub"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uIv-OO-kxb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <customObject id="xXs-m0-HM6" customClass="UserInfoAssembler" customModule="iOSMessenger" customModuleProvider="target">
+                    <connections>
+                        <outlet property="view" destination="BcY-3I-gYv" id="J4c-Fy-Sac"/>
+                    </connections>
+                </customObject>
+            </objects>
+            <point key="canvasLocation" x="1676" y="184.85757121439281"/>
         </scene>
         <!--View-->
         <scene sceneID="zuW-mR-dPJ">
