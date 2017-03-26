@@ -197,7 +197,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hv4-QA-0Cd">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="200"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="220"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Y1t-Rr-2pr">
                                         <rect key="frame" x="137" y="80" width="100" height="100"/>
@@ -212,22 +212,47 @@
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                     </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nick Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bdw-lx-Bw1">
+                                        <rect key="frame" x="20" y="190" width="335" height="25"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="18"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                                 <color key="backgroundColor" red="0.32850273922292916" green="1" blue="0.25657710527878164" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="200" id="Tfo-0w-z6d"/>
+                                    <constraint firstItem="Bdw-lx-Bw1" firstAttribute="top" secondItem="Y1t-Rr-2pr" secondAttribute="bottom" constant="10" id="BgC-e4-lhJ"/>
+                                    <constraint firstAttribute="trailing" secondItem="Bdw-lx-Bw1" secondAttribute="trailing" constant="20" id="F0g-1v-ioJ"/>
+                                    <constraint firstItem="Bdw-lx-Bw1" firstAttribute="leading" secondItem="Hv4-QA-0Cd" secondAttribute="leading" constant="20" id="JWU-IA-u4K"/>
+                                    <constraint firstAttribute="height" constant="220" id="Tfo-0w-z6d"/>
                                     <constraint firstItem="Y1t-Rr-2pr" firstAttribute="top" secondItem="Hv4-QA-0Cd" secondAttribute="top" constant="80" id="W0b-6f-1aj"/>
                                     <constraint firstItem="Y1t-Rr-2pr" firstAttribute="centerX" secondItem="Hv4-QA-0Cd" secondAttribute="centerX" id="nWx-cJ-LmT"/>
                                 </constraints>
                             </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Rgk-39-8vj">
+                                <rect key="frame" x="0.0" y="220" width="375" height="447"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="BcY-3I-gYv" id="A3J-4A-huu"/>
+                                    <outlet property="delegate" destination="BcY-3I-gYv" id="2HQ-Y8-9cq"/>
+                                </connections>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="Hv4-QA-0Cd" secondAttribute="trailing" id="0Bh-hS-eHr"/>
+                            <constraint firstItem="Tay-kS-aC2" firstAttribute="top" secondItem="Rgk-39-8vj" secondAttribute="bottom" id="ESl-jc-9ai"/>
                             <constraint firstItem="Hv4-QA-0Cd" firstAttribute="top" secondItem="tqY-Hh-mHq" secondAttribute="top" id="Gi0-cB-Tah"/>
                             <constraint firstItem="Hv4-QA-0Cd" firstAttribute="leading" secondItem="tqY-Hh-mHq" secondAttribute="leading" id="PpD-tj-pub"/>
+                            <constraint firstItem="Rgk-39-8vj" firstAttribute="top" secondItem="Hv4-QA-0Cd" secondAttribute="bottom" id="Z1I-mq-los"/>
+                            <constraint firstItem="Rgk-39-8vj" firstAttribute="leading" secondItem="tqY-Hh-mHq" secondAttribute="leading" id="cEC-yV-mGv"/>
+                            <constraint firstAttribute="trailing" secondItem="Rgk-39-8vj" secondAttribute="trailing" id="v6F-Bl-51p"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="nickNameLabel" destination="Bdw-lx-Bw1" id="WbO-aS-dUI"/>
+                        <outlet property="tableView" destination="Rgk-39-8vj" id="tBZ-2b-rS4"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uIv-OO-kxb" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <customObject id="xXs-m0-HM6" customClass="UserInfoAssembler" customModule="iOSMessenger" customModuleProvider="target">

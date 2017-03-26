@@ -5,7 +5,7 @@
 //  Created by Asmins on 22/02/2017.
 //  Copyright © 2017 GraduateWork. All rights reserved.
 //
-
+import FirebaseAuth
 import Chamomile
 
 // MARK: - LoginPresenter
@@ -48,8 +48,8 @@ extension LoginPresenter: LoginInteractorOutput {
         view.showAlert(text: text)
     }
 
-    func openUserInfo() {
-        router.openUserInfo(userInfoModuleOutput: self)
+    func openUserInfo(user: FIRUser) {
+        router.openUserInfo(userInfoModuleOutput: self,user: user)
     }
 }
 

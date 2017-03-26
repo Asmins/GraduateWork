@@ -12,14 +12,11 @@ class LineView: UIView {
 
     override func awakeFromNib() {
         super.awakeFromNib()
-
     }
 
     override func draw(_ rect: CGRect) {
         let aPath = UIBezierPath()
-
         aPath.move(to: CGPoint(x: self.bounds.width / 2, y: 0))
-
         aPath.addLine(to: CGPoint(x: self.bounds.width / 2, y: self.bounds.height))
         aPath.lineWidth = 1.0
         aPath.close()

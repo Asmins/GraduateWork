@@ -7,7 +7,7 @@
 //
 import UIKit
 import FirebaseAuth
-
+import FirebaseDatabase
 // MARK: - LoginInteractor
 
 final class LoginInteractor {
@@ -24,6 +24,15 @@ final class LoginInteractor {
         return emailTest.evaluate(with: email)
     }
 
+    func getUserInfo(user: FIRUser) {
+        let ref = FIRDatabase.database().reference(fromURL: "https://iosmessanger.firebaseio.com")
+        ref.child("/users").observe(.value, with: { snapshot in
+            let value = snapshot.value as? NSDictionary
+            let userFromBD = value?[user.uid] as? NSDictionary
+            self.presenter.openUserInfo(user: (FIRAuth.auth()?.currentUser)!)
+        })
+    }
+
 }
 
 // MARK: - LoginInteractorInput
@@ -31,7 +40,6 @@ final class LoginInteractor {
 extension LoginInteractor: LoginInteractorInput {
 
     func loginUser(email: String, password: String, button: UIButton) {
-
         if email.characters.count == 0 {
             self.presenter.showAlert(text: "Empty Email Address")
             return
@@ -55,7 +63,7 @@ extension LoginInteractor: LoginInteractorInput {
         if validate(email) {
             FIRAuth.auth()?.signIn(withEmail: email, password: password, completion: { (user, error) in
                 if error != nil {
-                    self.presenter.showAlert(text: "The password is invalid or the user does not have a password.")
+                    self.presenter.showAlert(text: (error?.localizedDescription)!)
                 } else {
                     self.checkToConfirmUserEmail(user!, button: button)
                 }
@@ -73,7 +81,7 @@ extension LoginInteractor: LoginInteractorInput {
 
     func checkToConfirmUserEmail(_ user: FIRUser, button: UIButton) {
         if user.isEmailVerified {
-            self.presenter.openUserInfo()
+            self.getUserInfo(user: user)
         } else {
             button.isHidden = false
             self.presenter.showAlert(text: "You email don`t confirmation")

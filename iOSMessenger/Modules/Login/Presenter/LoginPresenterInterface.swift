@@ -7,7 +7,7 @@
 //
 import UIKit
 import Chamomile
-
+import FirebaseAuth
 // MARK: - LoginViewOutput
 
 protocol LoginViewOutput: class {
@@ -21,7 +21,7 @@ protocol LoginViewOutput: class {
 
 protocol LoginInteractorOutput: class {
     func showAlert(text: String)
-    func openUserInfo()
+    func openUserInfo(user: FIRUser)
 }
 
 // MARK: - LoginModuleInput

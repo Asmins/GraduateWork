@@ -5,6 +5,7 @@
 //  Created by Asmins on 01/03/2017.
 //  Copyright © 2017 GraduateWork. All rights reserved.
 //
+import FirebaseDatabase
 import FirebaseAuth
 // MARK: - RegistrationInteractor
 
@@ -20,6 +21,13 @@ final class RegistrationInteractor {
         let emailRegEx = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,}"
         let emailTest = NSPredicate(format:"SELF MATCHES %@", emailRegEx)
         return emailTest.evaluate(with: email)
+    }
+
+    func addUserInDataBase(_ userName: String, userEmail: String, userID: String) {
+        let ref = FIRDatabase.database().reference(fromURL: "https://iosmessanger.firebaseio.com/users")
+        let user = ["userName":userName,
+                    "userEmail": userEmail]
+        ref.child(userID).setValue(user)
     }
 
 }
@@ -47,6 +55,8 @@ extension RegistrationInteractor: RegistrationInteractorInput {
                         currentUser?.displayName = name
                         currentUser?.commitChanges(completion: nil)
                         FIRAuth.auth()?.currentUser?.sendEmailVerification(completion: nil)
+                        let userID = FIRAuth.auth()?.currentUser?.uid
+                        self.addUserInDataBase((currentUser?.displayName)!, userEmail: email, userID: userID!)
                         self.presenter.dissmisView()
                     } else {
                         self.presenter.showAlert((error?.localizedDescription)!)

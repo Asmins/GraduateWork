@@ -7,7 +7,7 @@
 //
 import Perform
 import Chamomile
-
+import FirebaseAuth
 // MARK: - LoginRouter
 
 final class LoginRouter {
@@ -35,9 +35,10 @@ extension LoginRouter: LoginRouterInput {
         })
     }
 
-    func openUserInfo(userInfoModuleOutput: UserInfoModuleOutput) {
+    func openUserInfo(userInfoModuleOutput: UserInfoModuleOutput, user: FIRUser ) {
         flowController.openModule(using: .openUserInfo, completion: {
             guard let moduleInput = $0 as? UserInfoModuleInput else { fatalError() }
+            moduleInput.passUser(user: user)
             return userInfoModuleOutput
         })
     }
