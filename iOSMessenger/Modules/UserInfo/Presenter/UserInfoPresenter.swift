@@ -20,19 +20,39 @@ final class UserInfoPresenter {
     var router: UserInfoRouterInput!
 
     var currentUser: FIRUser?
-
+    var array = [String]()
 }
 
 // MARK: - UserInfoViewOutput
 
 extension UserInfoPresenter: UserInfoViewOutput {
-
+    func checkToEmptyField(_ text: String) {
+        array.append(text)
+        if array.count == 4 {
+            interactor.checkToEmptyFields(array)
+            array.removeAll()
+        }
+    }
 }
 
 // MARK: - UserInfoInteractorOutput
 
 extension UserInfoPresenter: UserInfoInteractorOutput {
+    func showAlert(_ text: String) {
+        view.showAlertWith(text)
+    }
 
+    func openMainModule() {
+        router.showMainModule(mainModuleOutput: self)
+    }
+
+    func saveInfoAboutUser(user: User) {
+        interactor.saveInfoAboutUser(currentUser!, user: user)
+    }
+}
+
+extension UserInfoPresenter: MainModuleModuleOutput {
+    
 }
 
 // MARK: - UserInfoModuleInput

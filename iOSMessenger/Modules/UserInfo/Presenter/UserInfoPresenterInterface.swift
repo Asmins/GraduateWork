@@ -11,13 +11,15 @@ import Chamomile
 // MARK: - UserInfoViewOutput
 
 protocol UserInfoViewOutput: class {
-
+    func checkToEmptyField(_ text: String)
 }
 
 // MARK: - UserInfoInteractorOutput
 
 protocol UserInfoInteractorOutput: class {
-
+    func showAlert(_ text: String)
+    func openMainModule()
+    func saveInfoAboutUser(user: User)
 }
 
 // MARK: - UserInfoModuleInput

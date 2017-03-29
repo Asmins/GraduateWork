@@ -5,7 +5,7 @@
 //  Created by Asmins on 02/03/2017.
 //  Copyright © 2017 GraduateWork. All rights reserved.
 //
-
+import Perform
 import Chamomile
 
 // MARK: - UserInfoRouter
@@ -21,5 +21,16 @@ final class UserInfoRouter {
 // MARK: - UserInfoRouterInput
 
 extension UserInfoRouter: UserInfoRouterInput {
+    func showMainModule(mainModuleOutput: MainModuleModuleOutput) {
+        flowController.openModule(using: .openMainModule, completion: {
+            guard let moduleInput = $0 as? MainModuleModuleInput else { fatalError() }
+            return mainModuleOutput
+        })
+    }
+}
 
+extension Segue {
+    static var openMainModule: Segue<MainModuleViewController> {
+        return .init(identifier: SegueIndentifier().mainModule)
+    }
 }

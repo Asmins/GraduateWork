@@ -9,5 +9,5 @@
 // MARK: - UserInfoRouterInput
 
 protocol UserInfoRouterInput: class {
-
+    func showMainModule(mainModuleOutput: MainModuleModuleOutput)
 }

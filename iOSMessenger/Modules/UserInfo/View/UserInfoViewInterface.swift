@@ -9,6 +9,7 @@ import UIKit
 // MARK: - UserInfoViewInput
 
 protocol UserInfoViewInput: class {
+    func showAlertWith(_ text: String)
     func setup(_ tableView: UITableView)
     func setupSubTitle(_ nickName: String)
 }

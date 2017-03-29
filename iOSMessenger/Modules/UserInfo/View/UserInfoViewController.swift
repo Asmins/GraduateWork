@@ -14,8 +14,6 @@ final class UserInfoViewController: UIViewController, FlowController {
     
     @IBOutlet weak var nickNameLabel: UILabel!
 
-    var newUser = User()
-
     // MARK: - VIPER stack
     let arrayTitle = ["FirstName","LastName","BirtDay","Sex"]
 
@@ -24,6 +22,7 @@ final class UserInfoViewController: UIViewController, FlowController {
     var presenter: UserInfoViewOutput!
 
     override func viewDidLoad() {
+        super.viewDidLoad()
         let rightButton = UIBarButtonItem(title: "Save", style: .done, target: self, action: #selector(saveInfoAboutUser))
         self.navigationItem.rightBarButtonItem = rightButton
     }
@@ -38,7 +37,7 @@ final class UserInfoViewController: UIViewController, FlowController {
         for i in 0...arrayTitle.count - 1{
             let indexPath = IndexPath(item: i, section: 0)
             let cell = tableView.cellForRow(at: indexPath) as! InfoTableViewCell
-            print(cell.textField.text!)
+            self.presenter.checkToEmptyField(cell.textField.text!)
         }
     }
 
@@ -54,7 +53,16 @@ extension UserInfoViewController: UserInfoViewInput {
     }
 
     func setupSubTitle(_ nickName: String) {
-        nickNameLabel.text = nickName
+        if nickNameLabel != nil {
+            nickNameLabel.text = nickName
+        }
+    }
+
+    func showAlertWith(_ text: String) {
+        let alertController = UIAlertController(title: "", message: text, preferredStyle: .alert)
+        let ok = UIAlertAction(title: "Ok", style: .default, handler: nil)
+        alertController.addAction(ok)
+        self.present(alertController, animated: true, completion: nil)
     }
 }
 
