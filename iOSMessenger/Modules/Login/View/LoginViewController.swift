@@ -21,11 +21,13 @@ final class LoginViewController: UIViewController, FlowController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+
     }
 
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         resendButton.isHidden = true
+        self.presenter.checkValidToken()
         self.navigationController?.setNavigationBarHidden(true, animated: true)
     }
 

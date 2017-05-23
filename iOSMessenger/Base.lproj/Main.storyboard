@@ -173,6 +173,7 @@
                         <segue destination="NuN-tN-0E8" kind="show" identifier="regScreen" id="9Oh-Iu-ss4"/>
                         <segue destination="3Z4-Xp-utC" kind="show" identifier="forgotPassword" id="KxD-wI-y97"/>
                         <segue destination="BcY-3I-gYv" kind="show" identifier="userInfo" id="dpb-n2-8WJ"/>
+                        <segue destination="7RA-JN-jK4" kind="show" identifier="showMainModuleWithUser" id="yS4-7b-hZT"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8Ta-3y-htR" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -285,7 +286,7 @@
                     </connections>
                 </customObject>
             </objects>
-            <point key="canvasLocation" x="2398" y="185"/>
+            <point key="canvasLocation" x="2537" y="185"/>
         </scene>
         <!--View-->
         <scene sceneID="zuW-mR-dPJ">
@@ -524,4 +525,7 @@
         <image name="fromSky" width="640" height="1134"/>
         <image name="iconUser" width="30" height="30"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="yS4-7b-hZT"/>
+    </inferredMetricsTieBreakers>
 </document>

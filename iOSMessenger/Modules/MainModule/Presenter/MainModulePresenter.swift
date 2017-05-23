@@ -24,17 +24,25 @@ final class MainModulePresenter {
 // MARK: - MainModuleViewOutput
 
 extension MainModulePresenter: MainModuleViewOutput {
-
+    func logOutUser() {
+        interactor.logOutUser()
+    }
 }
 
 // MARK: - MainModuleInteractorOutput
 
 extension MainModulePresenter: MainModuleInteractorOutput {
-
+    func dissmiss() {
+        router.dissmiss()
+    }
 }
 
 // MARK: - MainModuleModuleInput
 
 extension MainModulePresenter: MainModuleModuleInput {
-
+    func alredySignInOrNot(signIn: Bool) {
+        if signIn {
+            self.view.showLogOutButton()
+        }
+    }
 }

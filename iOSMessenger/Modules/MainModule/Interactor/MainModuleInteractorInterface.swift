@@ -9,5 +9,5 @@
 // MARK: - MainModuleInteractorInput
 
 protocol MainModuleInteractorInput: class {
-
+    func logOutUser()
 }

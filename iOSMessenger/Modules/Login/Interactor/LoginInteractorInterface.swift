@@ -11,6 +11,7 @@ import FirebaseAuth
 
 protocol LoginInteractorInput: class {
     func resendEmailConfirm()
+    func checkValidToken()
     func checkToConfirmUserEmail(_ user: FIRUser, button: UIButton)
     func loginUser(email: String, password: String, button: UIButton)
 }

@@ -88,4 +88,13 @@ extension LoginInteractor: LoginInteractorInput {
         }
     }
 
+    func checkValidToken() {
+
+        if FIRAuth.auth()?.currentUser?.uid == nil {
+            print("nil")
+        } else {
+            self.presenter.openMainModule()
+        }
+    }
+
 }

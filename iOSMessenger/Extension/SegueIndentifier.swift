@@ -11,5 +11,6 @@ struct SegueIndentifier {
     let regScreen = "regScreen"
     let forgotPassword = "forgotPassword"
     let userInfo = "userInfo"
+    let mainModuleWithUser = "showMainModuleWithUser"
     let mainModule = "showMainModule"
 }

@@ -9,5 +9,5 @@
 // MARK: - MainModuleRouterInput
 
 protocol MainModuleRouterInput: class {
-
+    func dissmiss()
 }

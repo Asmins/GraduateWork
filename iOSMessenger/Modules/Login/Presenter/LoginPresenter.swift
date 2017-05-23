@@ -27,7 +27,11 @@ extension LoginPresenter: LoginViewOutput {
     func loginUser(email: UITextField, password: UITextField, button: UIButton) {
         interactor.loginUser(email: email.text!, password: password.text!, button: button)
     }
-    
+
+    func checkValidToken() {
+        interactor.checkValidToken()
+    }
+
     func openRegScreen() {
         router.openRegScreen(regViewOutput: self)
     }
@@ -39,6 +43,8 @@ extension LoginPresenter: LoginViewOutput {
     func resendEmailConfirm() {
         interactor.resendEmailConfirm()
     }
+
+    
 }
 
 // MARK: - LoginInteractorOutput
@@ -51,6 +57,11 @@ extension LoginPresenter: LoginInteractorOutput {
     func openUserInfo(user: FIRUser) {
         router.openUserInfo(userInfoModuleOutput: self,user: user)
     }
+
+    func openMainModule() {
+        router.openMainModule(viewModuleOutput: self)
+    }
+
 }
 
 // MARK: - LoginModuleInput
@@ -59,6 +70,6 @@ extension LoginPresenter: LoginModuleInput {
 
 }
 
-extension LoginPresenter: RegistrationModuleOutput, ForgotPasswordModuleOutput, UserInfoModuleOutput {
+extension LoginPresenter: RegistrationModuleOutput, ForgotPasswordModuleOutput, UserInfoModuleOutput,MainModuleModuleOutput {
     
 }

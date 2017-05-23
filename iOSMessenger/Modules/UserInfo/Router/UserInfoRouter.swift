@@ -24,6 +24,7 @@ extension UserInfoRouter: UserInfoRouterInput {
     func showMainModule(mainModuleOutput: MainModuleModuleOutput) {
         flowController.openModule(using: .openMainModule, completion: {
             guard let moduleInput = $0 as? MainModuleModuleInput else { fatalError() }
+            moduleInput.alredySignInOrNot(signIn: true)
             return mainModuleOutput
         })
     }

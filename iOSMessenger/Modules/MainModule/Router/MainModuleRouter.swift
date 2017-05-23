@@ -21,5 +21,7 @@ final class MainModuleRouter {
 // MARK: - MainModuleRouterInput
 
 extension MainModuleRouter: MainModuleRouterInput {
-
+    func dissmiss() {
+        flowController.closeModule(animated: true)
+    }
 }

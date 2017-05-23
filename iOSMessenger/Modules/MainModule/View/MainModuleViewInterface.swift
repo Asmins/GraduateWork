@@ -9,5 +9,5 @@
 // MARK: - MainModuleViewInput
 
 protocol MainModuleViewInput: class {
-
+    func showLogOutButton()
 }

@@ -12,6 +12,7 @@ import FirebaseAuth
 
 protocol LoginViewOutput: class {
     func openRegScreen()
+    func checkValidToken()
     func openForgotPassword()
     func resendEmailConfirm()
     func loginUser(email: UITextField, password: UITextField, button: UIButton)
@@ -22,6 +23,7 @@ protocol LoginViewOutput: class {
 protocol LoginInteractorOutput: class {
     func showAlert(text: String)
     func openUserInfo(user: FIRUser)
+    func openMainModule()
 }
 
 // MARK: - LoginModuleInput

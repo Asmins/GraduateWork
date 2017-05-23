@@ -11,19 +11,19 @@ import Chamomile
 // MARK: - MainModuleViewOutput
 
 protocol MainModuleViewOutput: class {
-
+    func logOutUser()
 }
 
 // MARK: - MainModuleInteractorOutput
 
 protocol MainModuleInteractorOutput: class {
-
+    func dissmiss()
 }
 
 // MARK: - MainModuleModuleInput
 
 protocol MainModuleModuleInput: ModuleInput {
-
+    func alredySignInOrNot(signIn:Bool)
 }
 
 // MARK: - MainModuleModuleOutput

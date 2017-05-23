@@ -42,6 +42,15 @@ extension LoginRouter: LoginRouterInput {
             return userInfoModuleOutput
         })
     }
+
+    func openMainModule(viewModuleOutput: MainModuleModuleOutput) {
+        flowController.openModule(using: .openMainModuleWithUser, completion: {
+            guard let moduleInput = $0 as? MainModuleModuleInput else { fatalError() }
+            moduleInput.alredySignInOrNot(signIn: true)
+            return viewModuleOutput
+        })
+    }
+
 }
 
 extension Segue {
@@ -55,5 +64,9 @@ extension Segue {
 
     static var openUserInfo: Segue<UserInfoViewController> {
         return .init(identifier: SegueIndentifier().userInfo)
+    }
+
+    static var openMainModuleWithUser: Segue<MainModuleViewController> {
+        return .init(identifier: SegueIndentifier().mainModuleWithUser)
     }
 }
