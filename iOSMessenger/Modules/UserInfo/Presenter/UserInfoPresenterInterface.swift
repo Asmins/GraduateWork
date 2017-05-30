@@ -18,6 +18,7 @@ protocol UserInfoViewOutput: class {
 
 protocol UserInfoInteractorOutput: class {
     func showAlert(_ text: String)
+    func setupView(_ user: FIRUser)
     func openMainModule()
     func saveInfoAboutUser(user: User)
 }

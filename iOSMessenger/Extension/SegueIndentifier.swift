@@ -13,4 +13,5 @@ struct SegueIndentifier {
     let userInfo = "userInfo"
     let mainModuleWithUser = "showMainModuleWithUser"
     let mainModule = "showMainModule"
+    let createNewGroup = "createNewGroup"
 }

@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "iOSMessenger/Modules/UserInfo/Interactor/UserInfoInteractor.swift"
-            timestampString = "512476974.699047"
+            timestampString = "517740384.783659"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "50"
-            endingLineNumber = "50"
+            startingLineNumber = "61"
+            endingLineNumber = "61"
             landmarkName = "checkToEmptyFields(_:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -41,13 +41,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "iOSMessenger/Modules/Login/Interactor/LoginInteractor.swift"
-            timestampString = "517222196.999085"
+            filePath = "iOSMessenger/Modules/UserInfo/Interactor/UserInfoInteractor.swift"
+            timestampString = "517738750.807685"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "65"
-            endingLineNumber = "65"
-            landmarkName = "loginUser(email:password:button:)"
+            startingLineNumber = "44"
+            endingLineNumber = "44"
+            landmarkName = "checkAlredyHaveInfoInDataBase(_:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -57,13 +57,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "iOSMessenger/Modules/Login/Interactor/LoginInteractor.swift"
-            timestampString = "517236449.430031"
+            filePath = "iOSMessenger/Modules/UserInfo/Presenter/UserInfoPresenter.swift"
+            timestampString = "517740160.823799"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "93"
-            endingLineNumber = "93"
-            landmarkName = "checkValidToken()"
+            startingLineNumber = "69"
+            endingLineNumber = "69"
+            landmarkName = "passUser(user:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -73,13 +73,77 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "iOSMessenger/Modules/MainModule/Interactor/MainModuleInteractor.swift"
-            timestampString = "517237704.348003"
+            filePath = "iOSMessenger/Modules/UserInfo/Interactor/UserInfoInteractor.swift"
+            timestampString = "517740199.309203"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "28"
-            endingLineNumber = "28"
-            landmarkName = "logOutUser()"
+            startingLineNumber = "48"
+            endingLineNumber = "48"
+            landmarkName = "checkAlredyHaveInfoInDataBase(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "iOSMessenger/Modules/UserInfo/Interactor/UserInfoInteractor.swift"
+            timestampString = "517740200.279992"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "50"
+            endingLineNumber = "50"
+            landmarkName = "checkAlredyHaveInfoInDataBase(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "iOSMessenger/Modules/CreateNewGroup/Interactor/CreateNewGroupInteractor.swift"
+            timestampString = "517843684.287233"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "29"
+            endingLineNumber = "29"
+            landmarkName = "saveGroup(group:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "iOSMessenger/Modules/CreateNewGroup/View/CreateNewGroupViewController.swift"
+            timestampString = "517843994.323897"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "38"
+            endingLineNumber = "38"
+            landmarkName = "saveAccess(switchAccess:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "iOSMessenger/Modules/MainModule/View/MainModuleViewController.swift"
+            timestampString = "517846463.508698"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "88"
+            endingLineNumber = "88"
+            landmarkName = "tableView(_:numberOfRowsInSection:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

@@ -40,6 +40,17 @@ final class UserInfoInteractor {
         }
     }
 
+    func checkAlredyHaveInfoInDataBase(_ user: FIRUser) {
+        let ref = FIRDatabase.database().reference(fromURL: "https://iosmessanger.firebaseio.com/users/\(user.uid)")
+        ref.observe(.value, with: { snapshot in
+            let value = snapshot.value as? NSDictionary
+            if value != nil {
+                self.presenter.openMainModule()
+            } else {
+                self.presenter.setupView(user)
+            }
+        })
+    }
 }
 
 // MARK: - UserInfoInteractorInput

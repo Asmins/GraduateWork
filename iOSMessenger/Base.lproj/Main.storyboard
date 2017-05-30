@@ -38,6 +38,9 @@
                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
                                         <integer key="value" value="20"/>
                                     </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mTO-am-jHr">
@@ -121,6 +124,9 @@
                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
                                         <integer key="value" value="20"/>
                                     </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XFj-Qg-2UW">
@@ -172,7 +178,7 @@
                         <outlet property="resendButton" destination="XFj-Qg-2UW" id="thv-wk-cCd"/>
                         <segue destination="NuN-tN-0E8" kind="show" identifier="regScreen" id="9Oh-Iu-ss4"/>
                         <segue destination="3Z4-Xp-utC" kind="show" identifier="forgotPassword" id="KxD-wI-y97"/>
-                        <segue destination="BcY-3I-gYv" kind="show" identifier="userInfo" id="dpb-n2-8WJ"/>
+                        <segue destination="BcY-3I-gYv" kind="show" identifier="userInfo" animates="NO" id="dpb-n2-8WJ"/>
                         <segue destination="7RA-JN-jK4" kind="show" identifier="showMainModuleWithUser" id="yS4-7b-hZT"/>
                     </connections>
                 </viewController>
@@ -268,7 +274,7 @@
         <!--View-->
         <scene sceneID="LZv-G4-98x">
             <objects>
-                <viewController id="7RA-JN-jK4" customClass="MainModuleViewController" customModule="iOSMessenger" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Main" id="7RA-JN-jK4" customClass="MainModuleViewController" customModule="iOSMessenger" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="6hv-eH-gT5"/>
                         <viewControllerLayoutGuide type="bottom" id="2mZ-Ex-p3a"/>
@@ -276,8 +282,45 @@
                     <view key="view" contentMode="scaleToFill" id="BhM-uD-yMo">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="vcL-qs-e7E">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="639"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="7RA-JN-jK4" id="l31-83-vez"/>
+                                    <outlet property="delegate" destination="7RA-JN-jK4" id="1oF-Go-v0V"/>
+                                </connections>
+                            </tableView>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="F0t-7e-7G2">
+                                <rect key="frame" x="0.0" y="639" width="375" height="29"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <segments>
+                                    <segment title="Groups"/>
+                                    <segment title="Users"/>
+                                </segments>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <action selector="indexChanged:" destination="7RA-JN-jK4" eventType="valueChanged" id="aaV-47-zHi"/>
+                                </connections>
+                            </segmentedControl>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="F0t-7e-7G2" secondAttribute="trailing" id="4Vc-Hh-yKA"/>
+                            <constraint firstItem="2mZ-Ex-p3a" firstAttribute="top" secondItem="F0t-7e-7G2" secondAttribute="bottom" id="8Jq-1D-IRb"/>
+                            <constraint firstAttribute="trailing" secondItem="vcL-qs-e7E" secondAttribute="trailing" id="E5c-I5-7Xo"/>
+                            <constraint firstItem="vcL-qs-e7E" firstAttribute="top" secondItem="BhM-uD-yMo" secondAttribute="top" id="dd7-18-uDv"/>
+                            <constraint firstItem="F0t-7e-7G2" firstAttribute="leading" secondItem="BhM-uD-yMo" secondAttribute="leading" id="jPV-tQ-VmB"/>
+                            <constraint firstItem="F0t-7e-7G2" firstAttribute="top" secondItem="vcL-qs-e7E" secondAttribute="bottom" id="rS4-5s-Kfl"/>
+                            <constraint firstItem="vcL-qs-e7E" firstAttribute="leading" secondItem="BhM-uD-yMo" secondAttribute="leading" id="ytZ-Kc-sCz"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="segmentController" destination="F0t-7e-7G2" id="QO5-s8-dsZ"/>
+                        <outlet property="tableVIew" destination="vcL-qs-e7E" id="Nk0-GN-i5W"/>
+                        <segue destination="kvM-B1-kgN" kind="show" identifier="showSelectedGroup" id="fcl-nr-Lh2"/>
+                        <segue destination="FtT-cf-GeN" kind="show" identifier="createNewGroup" id="KqR-eO-dCg"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Cc1-vZ-EjT" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <customObject id="uDd-s4-sZk" customClass="MainModuleAssembler" customModule="iOSMessenger" customModuleProvider="target">
@@ -286,7 +329,7 @@
                     </connections>
                 </customObject>
             </objects>
-            <point key="canvasLocation" x="2537" y="185"/>
+            <point key="canvasLocation" x="2536.8000000000002" y="184.85757121439281"/>
         </scene>
         <!--View-->
         <scene sceneID="zuW-mR-dPJ">
@@ -323,6 +366,9 @@
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="color" keyPath="_placeholderLabel.textColor">
                                         <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </textField>
@@ -409,6 +455,9 @@
                                     <userDefinedRuntimeAttribute type="number" keyPath="leftPadding">
                                         <real key="value" value="10"/>
                                     </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Email Address" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ERa-F7-3M6" customClass="CustomTextField" customModule="iOSMessenger" customModuleProvider="target">
@@ -426,6 +475,9 @@
                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
                                         <integer key="value" value="20"/>
                                     </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Password" textAlignment="center" adjustsFontSizeToFit="NO" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eCF-Tc-Ih3" customClass="CustomTextField" customModule="iOSMessenger" customModuleProvider="target">
@@ -439,6 +491,9 @@
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
                                         <integer key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </textField>
@@ -500,6 +555,66 @@
                 </customObject>
             </objects>
             <point key="canvasLocation" x="1593" y="946"/>
+        </scene>
+        <!--View-->
+        <scene sceneID="qYH-yF-fBo">
+            <objects>
+                <viewController title="New Group" id="FtT-cf-GeN" customClass="CreateNewGroupViewController" customModule="iOSMessenger" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="XsQ-wS-ni8"/>
+                        <viewControllerLayoutGuide type="bottom" id="EP7-2o-b6L"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="UCr-RO-yNW">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="8Li-Vb-5Me">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="FtT-cf-GeN" id="2Ch-CW-fCq"/>
+                                    <outlet property="delegate" destination="FtT-cf-GeN" id="hOT-5G-5Co"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="8Li-Vb-5Me" secondAttribute="trailing" id="Im5-JI-uXI"/>
+                            <constraint firstItem="EP7-2o-b6L" firstAttribute="top" secondItem="8Li-Vb-5Me" secondAttribute="bottom" id="JMg-MO-yZs"/>
+                            <constraint firstItem="8Li-Vb-5Me" firstAttribute="leading" secondItem="UCr-RO-yNW" secondAttribute="leading" id="PQ2-lv-BRN"/>
+                            <constraint firstItem="8Li-Vb-5Me" firstAttribute="top" secondItem="UCr-RO-yNW" secondAttribute="top" id="ngl-ac-SK6"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="8Li-Vb-5Me" id="qHG-fx-0vq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hhG-5X-qYz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <customObject id="vDG-yq-B1m" customClass="CreateNewGroupAssembler" customModule="iOSMessenger" customModuleProvider="target">
+                    <connections>
+                        <outlet property="view" destination="FtT-cf-GeN" id="zdQ-7J-eow"/>
+                    </connections>
+                </customObject>
+            </objects>
+            <point key="canvasLocation" x="2536.8000000000002" y="945.87706146926541"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="B51-00-bD7">
+            <objects>
+                <viewController id="kvM-B1-kgN" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="gRj-Hi-gcn"/>
+                        <viewControllerLayoutGuide type="bottom" id="ZYT-53-Tck"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="s7d-ND-yM2">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wKu-W5-PLO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3284" y="185"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="SiC-Wh-kRC">

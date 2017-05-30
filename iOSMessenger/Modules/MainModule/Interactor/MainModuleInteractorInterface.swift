@@ -9,5 +9,6 @@
 // MARK: - MainModuleInteractorInput
 
 protocol MainModuleInteractorInput: class {
-    func logOutUser()
+    func logOutUser(action:()->())
+    func getGroups()
 }

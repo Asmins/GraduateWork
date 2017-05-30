@@ -9,5 +9,6 @@
 // MARK: - MainModuleRouterInput
 
 protocol MainModuleRouterInput: class {
+    func openCreateNewGroupView(newGroupView: CreateNewGroupModuleOutput)
     func dissmiss()
 }

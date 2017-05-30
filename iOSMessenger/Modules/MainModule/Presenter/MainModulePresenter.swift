@@ -24,8 +24,16 @@ final class MainModulePresenter {
 // MARK: - MainModuleViewOutput
 
 extension MainModulePresenter: MainModuleViewOutput {
-    func logOutUser() {
-        interactor.logOutUser()
+    func logOutUser(action:()->()) {
+        interactor.logOutUser(action: action)
+    }
+
+    func openCreateNewGroupView() {
+        router.openCreateNewGroupView(newGroupView: self)
+    }
+
+    func getGroups() {
+        interactor.getGroups()
     }
 }
 
@@ -34,6 +42,10 @@ extension MainModulePresenter: MainModuleViewOutput {
 extension MainModulePresenter: MainModuleInteractorOutput {
     func dissmiss() {
         router.dissmiss()
+    }
+
+    func passGroup(_ groups: [Group]) {
+        self.view.setGroups(groups)
     }
 }
 
@@ -46,3 +58,8 @@ extension MainModulePresenter: MainModuleModuleInput {
         }
     }
 }
+
+extension MainModulePresenter: CreateNewGroupModuleOutput {
+
+}
+

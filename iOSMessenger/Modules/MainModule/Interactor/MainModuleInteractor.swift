@@ -22,11 +22,26 @@ final class MainModuleInteractor {
 // MARK: - MainModuleInteractorInput
 
 extension MainModuleInteractor: MainModuleInteractorInput {
-    func logOutUser() {
+    func getGroups() {
+        var arrayGroup = [Group]()
+        let ref = FIRDatabase.database().reference(fromURL: "https://iosmessanger.firebaseio.com/groups")
+        ref.observeSingleEvent(of: .value, with: { snapshot in
+            let values = snapshot.value as? NSDictionary
+            let arrayKeys = values?.allKeys
+            for key in arrayKeys! {
+                let data = values?[key] as? NSDictionary
+                let group = Group(name: data?["nameGroup"] as! String, access: data?["access"] as! Bool, password: data?["password"] as! String)
+                arrayGroup.append(group)
+            }
+            self.presenter.passGroup(arrayGroup)
+        })
+    }
+
+    func logOutUser(action:()->()) {
         let fireBaseAuth = FIRAuth.auth()
         do {
             try fireBaseAuth?.signOut()
-            presenter.dissmiss()
+            action()
         } catch let error as Error {
             print(error.localizedDescription)
         }

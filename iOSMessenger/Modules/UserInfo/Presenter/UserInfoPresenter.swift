@@ -6,6 +6,7 @@
 //  Copyright © 2017 GraduateWork. All rights reserved.
 //
 import FirebaseAuth
+import FirebaseDatabase
 import Chamomile
 
 // MARK: - UserInfoPresenter
@@ -49,6 +50,12 @@ extension UserInfoPresenter: UserInfoInteractorOutput {
     func saveInfoAboutUser(user: User) {
         interactor.saveInfoAboutUser(currentUser!, user: user)
     }
+
+    func setupView(_ user: FIRUser) {
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.3, execute: {
+            self.view.setupSubTitle(user.displayName!)
+        })
+    }
 }
 
 extension UserInfoPresenter: MainModuleModuleOutput {
@@ -60,8 +67,6 @@ extension UserInfoPresenter: MainModuleModuleOutput {
 extension UserInfoPresenter: UserInfoModuleInput {
     func passUser(user: FIRUser) {
         self.currentUser = user
-        DispatchQueue.main.asyncAfter(deadline: .now() + 0.3, execute: {
-            self.view.setupSubTitle(user.displayName!)
-        })
+        self.interactor.checkAlredyHaveInfoInDataBase(self.currentUser!)
     }
 }

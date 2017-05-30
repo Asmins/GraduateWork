@@ -11,13 +11,16 @@ import Chamomile
 // MARK: - MainModuleViewOutput
 
 protocol MainModuleViewOutput: class {
-    func logOutUser()
+    func logOutUser(action:()->())
+    func getGroups()
+    func openCreateNewGroupView()
 }
 
 // MARK: - MainModuleInteractorOutput
 
 protocol MainModuleInteractorOutput: class {
     func dissmiss()
+    func passGroup(_ groups: [Group])
 }
 
 // MARK: - MainModuleModuleInput

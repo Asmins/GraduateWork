@@ -10,5 +10,6 @@ import FirebaseAuth
 
 protocol UserInfoInteractorInput: class {
     func checkToEmptyFields(_ array: [String])
+    func checkAlredyHaveInfoInDataBase(_ user: FIRUser)
     func saveInfoAboutUser(_ userFromFIR: FIRUser,user: User)
 }
